@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<title>bestpractice</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="generator" content="pdftohtml 0.36"/>
+<meta name="date" content="2023-06-09T12:38:16+00:00"/>
+<style type="text/css">
+<!--
+.xflip {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: fliph;
+}
+.yflip {
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: flipv;
+}
+.xyflip {
+    -moz-transform: scaleX(-1) scaleY(-1);
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    -o-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+    filter: fliph + flipv;
+}
+-->
+</style>
+</head>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue">
+<!-- Page 1 -->
+<a name="1"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft00{font-size:12px;font-family:AAAAAA+Times;color:#000000;}
+	.ft01{font-size:18px;font-family:BAAAAA+font000000002a3354b8;color:#343740;}
+	.ft02{font-size:14px;font-family:Times;color:#343740;}
+	.ft03{font-size:18px;font-family:BAAAAA+font000000002a3354b8;color:#0fa27e;}
+	.ft04{font-size:36px;font-family:DAAAAA+font000000002a3354b8;color:#202023;}
+	.ft05{font-size:27px;font-family:DAAAAA+font000000002a3354b8;color:#202023;}
+	.ft06{font-size:22px;font-family:DAAAAA+font000000002a3354b8;color:#202023;}
+	.ft07{font-size:18px;line-height:26px;font-family:BAAAAA+font000000002a3354b8;color:#343740;}
+-->
+</style>
+<div id="page1-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice001.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:831px;white-space:nowrap" class="ft00">1/20</p>
+<p style="position:absolute;top:219px;left:69px;white-space:nowrap" class="ft07">This&#160;guide&#160;shares&#160;strategies&#160;and&#160;tactics&#160;for&#160;getting&#160;better&#160;results&#160;from&#160;GPTs.&#160;The&#160;methods<br/>described&#160;here&#160;can&#160;sometimes&#160;be&#160;deployed&#160;in&#160;combination&#160;for&#160;greater&#160;effect.&#160;We<br/>encourage&#160;experimentation&#160;to&#160;ﬁnd&#160;the&#160;methods&#160;that&#160;work&#160;best&#160;for&#160;you.</p>
+<p style="position:absolute;top:317px;left:69px;white-space:nowrap" class="ft07">Some&#160;of&#160;the&#160;examples&#160;demonstrated&#160;here&#160;currently&#160;work&#160;only&#160;with&#160;our&#160;most&#160;capable<br/>model,&#160;</p>
+<p style="position:absolute;top:347px;left:138px;white-space:nowrap" class="ft02">gpt-4</p>
+<p style="position:absolute;top:344px;left:193px;white-space:nowrap" class="ft01">.&#160;If&#160;you&#160;don't&#160;yet&#160;have&#160;access&#160;to&#160;</p>
+<p style="position:absolute;top:347px;left:467px;white-space:nowrap" class="ft02">gpt-4</p>
+<p style="position:absolute;top:344px;left:522px;white-space:nowrap" class="ft01">&#160;consider&#160;joining&#160;the<a href="https://openai.com/waitlist/gpt-4-api">&#160;</a></p>
+<p style="position:absolute;top:344px;left:694px;white-space:nowrap" class="ft03"><a href="https://openai.com/waitlist/gpt-4-api">waitlist</a></p>
+<p style="position:absolute;top:344px;left:755px;white-space:nowrap" class="ft01">.&#160;In</p>
+<p style="position:absolute;top:371px;left:69px;white-space:nowrap" class="ft07">general,&#160;if&#160;you&#160;ﬁnd&#160;that&#160;a&#160;GPT&#160;model&#160;fails&#160;at&#160;a&#160;task&#160;and&#160;a&#160;more&#160;capable&#160;model&#160;is&#160;available,<br/>it's&#160;often&#160;worth&#160;trying&#160;again&#160;with&#160;the&#160;more&#160;capable&#160;model.</p>
+<p style="position:absolute;top:578px;left:69px;white-space:nowrap" class="ft07">GPTs&#160;can’t&#160;read&#160;your&#160;mind.&#160;If&#160;outputs&#160;are&#160;too&#160;long,&#160;ask&#160;for&#160;brief&#160;replies.&#160;If&#160;outputs&#160;are&#160;too<br/>simple,&#160;ask&#160;for&#160;expert-level&#160;writing.&#160;If&#160;you&#160;dislike&#160;the&#160;format,&#160;demonstrate&#160;the&#160;format&#160;you’d<br/>like&#160;to&#160;see.&#160;The&#160;less&#160;GPTs&#160;have&#160;to&#160;guess&#160;at&#160;what&#160;you&#160;want,&#160;the&#160;more&#160;likely&#160;you’ll&#160;get&#160;it.</p>
+<p style="position:absolute;top:676px;left:69px;white-space:nowrap" class="ft01">Tactics:</p>
+<p style="position:absolute;top:1000px;left:69px;white-space:nowrap" class="ft07">GPTs&#160;can&#160;conﬁdently&#160;invent&#160;fake&#160;answers,&#160;especially&#160;when&#160;asked&#160;about&#160;esoteric&#160;topics&#160;or<br/>for&#160;citations&#160;and&#160;URLs.&#160;In&#160;the&#160;same&#160;way&#160;that&#160;a&#160;sheet&#160;of&#160;notes&#160;can&#160;help&#160;a&#160;student&#160;do&#160;better<br/>on&#160;a&#160;test,&#160;providing&#160;reference&#160;text&#160;to&#160;GPTs&#160;can&#160;help&#160;in&#160;answering&#160;with&#160;fewer&#160;fabrications.</p>
+<p style="position:absolute;top:1098px;left:69px;white-space:nowrap" class="ft01">Tactics:</p>
+<p style="position:absolute;top:155px;left:69px;white-space:nowrap" class="ft04"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/gpt-best-practices">GPT&#160;best&#160;practices</a></p>
+<p style="position:absolute;top:459px;left:69px;white-space:nowrap" class="ft05"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/six-strategies-for-getting-better-results">Six&#160;strategies&#160;for&#160;getting&#160;better&#160;results</a></p>
+<p style="position:absolute;top:529px;left:69px;white-space:nowrap" class="ft06"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/write-clear-instructions">Write&#160;clear&#160;instructions</a></p>
+<p style="position:absolute;top:720px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-include-details-in-your-query-to-get-more-relevant-answers">Include&#160;details&#160;in&#160;your&#160;query&#160;to&#160;get&#160;more&#160;relevant&#160;answers</a></p>
+<p style="position:absolute;top:754px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-ask-the-model-to-adopt-a-persona">Ask&#160;the&#160;model&#160;to&#160;adopt&#160;a&#160;persona</a></p>
+<p style="position:absolute;top:789px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-delimiters-to-clearly-indicate-distinct-parts-of-the-input">Use&#160;delimiters&#160;to&#160;clearly&#160;indicate&#160;distinct&#160;parts&#160;of&#160;the&#160;input</a></p>
+<p style="position:absolute;top:822px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-specify-the-steps-required-to-complete-a-task">Specify&#160;the&#160;steps&#160;required&#160;to&#160;complete&#160;a&#160;task</a></p>
+<p style="position:absolute;top:857px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-provide-examples">Provide&#160;examples</a></p>
+<p style="position:absolute;top:891px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-specify-the-desired-length-of-the-output">Specify&#160;the&#160;desired&#160;length&#160;of&#160;the&#160;output</a></p>
+<p style="position:absolute;top:951px;left:69px;white-space:nowrap" class="ft06"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/provide-reference-text">Provide&#160;reference&#160;text</a></p>
+<p style="position:absolute;top:1142px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-instruct-the-model-to-answer-using-a-reference-text">Instruct&#160;the&#160;model&#160;to&#160;answer&#160;using&#160;a&#160;reference&#160;text</a></p>
+<p style="position:absolute;top:1177px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-instruct-the-model-to-answer-with-citations-from-a-reference-text">Instruct&#160;the&#160;model&#160;to&#160;answer&#160;with&#160;citations&#160;from&#160;a&#160;reference&#160;text</a></p>
+</div>
+<!-- Page 2 -->
+<a name="2"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft08{font-size:18px;line-height:25px;font-family:BAAAAA+font000000002a3354b8;color:#0fa27e;}
+-->
+</style>
+<div id="page2-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice002.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:831px;white-space:nowrap" class="ft00">2/20</p>
+<p style="position:absolute;top:93px;left:69px;white-space:nowrap" class="ft07">Just&#160;as&#160;it&#160;is&#160;good&#160;practice&#160;in&#160;software&#160;engineering&#160;to&#160;decompose&#160;a&#160;complex&#160;system&#160;into&#160;a<br/>set&#160;of&#160;modular&#160;components,&#160;the&#160;same&#160;is&#160;true&#160;of&#160;tasks&#160;submitted&#160;to&#160;GPTs.&#160;Complex&#160;tasks<br/>tend&#160;to&#160;have&#160;higher&#160;error&#160;rates&#160;than&#160;simpler&#160;tasks.&#160;Furthermore,&#160;complex&#160;tasks&#160;can&#160;often<br/>be&#160;re-deﬁned&#160;as&#160;a&#160;workﬂow&#160;of&#160;simpler&#160;tasks&#160;in&#160;which&#160;the&#160;outputs&#160;of&#160;earlier&#160;tasks&#160;are&#160;used<br/>to&#160;construct&#160;the&#160;inputs&#160;to&#160;later&#160;tasks.</p>
+<p style="position:absolute;top:245px;left:69px;white-space:nowrap" class="ft01">Tactics:</p>
+<p style="position:absolute;top:493px;left:69px;white-space:nowrap" class="ft07">If&#160;asked&#160;to&#160;multiply&#160;17&#160;by&#160;28,&#160;you&#160;might&#160;not&#160;know&#160;it&#160;instantly,&#160;but&#160;can&#160;still&#160;work&#160;it&#160;out&#160;with<br/>time.&#160;Similarly,&#160;GPTs&#160;make&#160;more&#160;reasoning&#160;errors&#160;when&#160;trying&#160;to&#160;answer&#160;right&#160;away,&#160;rather<br/>than&#160;taking&#160;time&#160;to&#160;work&#160;out&#160;an&#160;answer.&#160;Asking&#160;for&#160;a&#160;chain&#160;of&#160;reasoning&#160;before&#160;an&#160;answer<br/>can&#160;help&#160;GPTs&#160;reason&#160;their&#160;way&#160;toward&#160;correct&#160;answers&#160;more&#160;reliably.</p>
+<p style="position:absolute;top:618px;left:69px;white-space:nowrap" class="ft01">Tactics:</p>
+<p style="position:absolute;top:839px;left:69px;white-space:nowrap" class="ft07">Compensate&#160;for&#160;the&#160;weaknesses&#160;of&#160;GPTs&#160;by&#160;feeding&#160;them&#160;the&#160;outputs&#160;of&#160;other&#160;tools.&#160;For<br/>example,&#160;a&#160;text&#160;retrieval&#160;system&#160;can&#160;tell&#160;GPTs&#160;about&#160;relevant&#160;documents.&#160;A&#160;code&#160;execution<br/>engine&#160;can&#160;help&#160;GPTs&#160;do&#160;math&#160;and&#160;run&#160;code.&#160;If&#160;a&#160;task&#160;can&#160;be&#160;done&#160;more&#160;reliably&#160;or<br/>efﬁciently&#160;by&#160;a&#160;tool&#160;rather&#160;than&#160;by&#160;a&#160;GPT,&#160;ofﬂoad&#160;it&#160;to&#160;get&#160;the&#160;best&#160;of&#160;both.</p>
+<p style="position:absolute;top:964px;left:69px;white-space:nowrap" class="ft01">Tactics:</p>
+<p style="position:absolute;top:1152px;left:69px;white-space:nowrap" class="ft07">Improving&#160;performance&#160;is&#160;easier&#160;if&#160;you&#160;can&#160;measure&#160;it.&#160;In&#160;some&#160;cases&#160;a&#160;modiﬁcation&#160;to&#160;a<br/>prompt&#160;will&#160;achieve&#160;better&#160;performance&#160;on&#160;a&#160;few&#160;isolated&#160;examples&#160;but&#160;lead&#160;to&#160;worse</p>
+<p style="position:absolute;top:44px;left:69px;white-space:nowrap" class="ft06"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/split-complex-tasks-into-simpler-subtasks">Split&#160;complex&#160;tasks&#160;into&#160;simpler&#160;subtasks</a></p>
+<p style="position:absolute;top:289px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-intent-classification-to-identify-the-most-relevant-instructions-for-a-user-query">Use&#160;intent&#160;classiﬁcation&#160;to&#160;identify&#160;the&#160;most&#160;relevant&#160;instructions&#160;for&#160;a&#160;user&#160;query</a></p>
+<p style="position:absolute;top:323px;left:105px;white-space:nowrap" class="ft08"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-for-dialogue-applications-that-require-very-long-conversations-summarize-or-filter-previous-dialogue">For&#160;dialogue&#160;applications&#160;that&#160;require&#160;very&#160;long&#160;conversations,&#160;summarize&#160;or&#160;ﬁlter<br/>previous&#160;dialogue</a></p>
+<p style="position:absolute;top:382px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-summarize-long-documents-piecewise-and-construct-a-full-summary-recursively">Summarize&#160;long&#160;documents&#160;piecewise&#160;and&#160;construct&#160;a&#160;full&#160;summary&#160;recursively</a></p>
+<p style="position:absolute;top:444px;left:69px;white-space:nowrap" class="ft06"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/give-gpts-time-to-think">Give&#160;GPTs&#160;time&#160;to&#160;&#34;think&#34;</a></p>
+<p style="position:absolute;top:661px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-instruct-the-model-to-work-out-its-own-solution-before-rushing-to-a-conclusion">Instruct&#160;the&#160;model&#160;to&#160;work&#160;out&#160;its&#160;own&#160;solution&#160;before&#160;rushing&#160;to&#160;a&#160;conclusion</a></p>
+<p style="position:absolute;top:695px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-inner-monologue-or-a-sequence-of-queries-to-hide-the-model-s-reasoning-process">Use&#160;inner&#160;monologue&#160;or&#160;a&#160;sequence&#160;of&#160;queries&#160;to&#160;hide&#160;the&#160;model's&#160;reasoning&#160;process</a></p>
+<p style="position:absolute;top:729px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-ask-the-model-if-it-missed-anything-on-previous-passes">Ask&#160;the&#160;model&#160;if&#160;it&#160;missed&#160;anything&#160;on&#160;previous&#160;passes</a></p>
+<p style="position:absolute;top:790px;left:69px;white-space:nowrap" class="ft06"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/use-external-tools">Use&#160;external&#160;tools</a></p>
+<p style="position:absolute;top:1008px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-embeddings-based-search-to-implement-efficient-knowledge-retrieval">Use&#160;embeddings-based&#160;search&#160;to&#160;implement&#160;efﬁcient&#160;knowledge&#160;retrieval</a></p>
+<p style="position:absolute;top:1042px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-code-execution-to-perform-more-accurate-calculations-or-call-external-apis">Use&#160;code&#160;execution&#160;to&#160;perform&#160;more&#160;accurate&#160;calculations&#160;or&#160;call&#160;external&#160;APIs</a></p>
+<p style="position:absolute;top:1103px;left:69px;white-space:nowrap" class="ft06"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/test-changes-systematically">Test&#160;changes&#160;systematically</a></p>
+</div>
+<!-- Page 3 -->
+<a name="3"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft09{font-size:18px;font-family:DAAAAA+font000000002a3354b8;color:#343740;}
+	.ft010{font-size:20px;font-family:DAAAAA+font000000002a3354b8;color:#202023;}
+-->
+</style>
+<div id="page3-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice003.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:831px;white-space:nowrap" class="ft00">3/20</p>
+<p style="position:absolute;top:44px;left:69px;white-space:nowrap" class="ft07">overall&#160;performance&#160;on&#160;a&#160;more&#160;representative&#160;set&#160;of&#160;examples.&#160;Therefore&#160;to&#160;be&#160;sure&#160;that&#160;a<br/><a href="https://platform.openai.com/overview">cha</a>nge&#160;is&#160;net&#160;positive&#160;to&#160;performance&#160;it&#160;may&#160;be&#160;necessary&#160;to&#160;deﬁne&#160;a&#160;comprehensive&#160;test<br/>suite&#160;(also&#160;known&#160;an&#160;as&#160;an&#160;&#34;eval&#34;).</p>
+<p style="position:absolute;top:142px;left:69px;white-space:nowrap" class="ft01">Tactic:</p>
+<p style="position:absolute;top:299px;left:69px;white-space:nowrap" class="ft07">Each&#160;of&#160;the&#160;strategies&#160;listed&#160;above&#160;can&#160;be&#160;instantiated&#160;with&#160;speciﬁc&#160;tactics.&#160;These&#160;tactics<br/>are&#160;meant&#160;to&#160;provide&#160;ideas&#160;for&#160;things&#160;to&#160;try.&#160;They&#160;are&#160;by&#160;no&#160;means&#160;fully&#160;comprehensive,&#160;and<br/>you&#160;should&#160;feel&#160;free&#160;to&#160;try&#160;creative&#160;ideas&#160;not&#160;represented&#160;here.</p>
+<p style="position:absolute;top:525px;left:69px;white-space:nowrap" class="ft07">In&#160;order&#160;to&#160;get&#160;a&#160;highly&#160;relevant&#160;response,&#160;make&#160;sure&#160;that&#160;requests&#160;provide&#160;any&#160;important<br/>details&#160;or&#160;context.&#160;Otherwise&#160;you&#160;are&#160;leaving&#160;it&#160;up&#160;to&#160;the&#160;model&#160;to&#160;guess&#160;what&#160;you&#160;mean.</p>
+<p style="position:absolute;top:615px;left:69px;white-space:nowrap" class="ft09">Worse</p>
+<p style="position:absolute;top:615px;left:270px;white-space:nowrap" class="ft09">Better</p>
+<p style="position:absolute;top:661px;left:69px;white-space:nowrap" class="ft07">How&#160;do&#160;I&#160;add<br/>numbers&#160;in&#160;Excel?</p>
+<p style="position:absolute;top:661px;left:270px;white-space:nowrap" class="ft07">How&#160;do&#160;I&#160;add&#160;up&#160;a&#160;row&#160;of&#160;dollar&#160;amounts&#160;in&#160;Excel?&#160;I&#160;want&#160;to&#160;do&#160;this<br/>automatically&#160;for&#160;a&#160;whole&#160;sheet&#160;of&#160;rows&#160;with&#160;all&#160;the&#160;totals&#160;ending<br/>up&#160;on&#160;the&#160;right&#160;in&#160;a&#160;column&#160;called&#160;&#34;Total&#34;.</p>
+<p style="position:absolute;top:762px;left:69px;white-space:nowrap" class="ft01">Who’s&#160;president?</p>
+<p style="position:absolute;top:762px;left:270px;white-space:nowrap" class="ft07">Who&#160;was&#160;the&#160;president&#160;of&#160;Mexico&#160;in&#160;2021,&#160;and&#160;how&#160;frequently&#160;are<br/>elections&#160;held?</p>
+<p style="position:absolute;top:835px;left:69px;white-space:nowrap" class="ft07">Write&#160;code&#160;to<br/>calculate&#160;the<br/>Fibonacci&#160;sequence.</p>
+<p style="position:absolute;top:835px;left:270px;white-space:nowrap" class="ft07">Write&#160;a&#160;TypeScript&#160;function&#160;to&#160;efﬁciently&#160;calculate&#160;the&#160;Fibonacci<br/>sequence.&#160;Comment&#160;the&#160;code&#160;liberally&#160;to&#160;explain&#160;what&#160;each&#160;piece<br/>does&#160;and&#160;why&#160;it's&#160;written&#160;that&#160;way.</p>
+<p style="position:absolute;top:935px;left:69px;white-space:nowrap" class="ft07">Summarize&#160;the<br/>meeting&#160;notes.</p>
+<p style="position:absolute;top:935px;left:270px;white-space:nowrap" class="ft07">Summarize&#160;the&#160;meeting&#160;notes&#160;in&#160;a&#160;single&#160;paragraph.&#160;Then&#160;write&#160;a<br/>markdown&#160;list&#160;of&#160;the&#160;speakers&#160;and&#160;each&#160;of&#160;their&#160;key&#160;points.&#160;Finally,<br/>list&#160;the&#160;next&#160;steps&#160;or&#160;action&#160;items&#160;suggested&#160;by&#160;the&#160;speakers,&#160;if<br/>any.</p>
+<p style="position:absolute;top:1132px;left:69px;white-space:nowrap" class="ft01">The&#160;system&#160;message&#160;can&#160;be&#160;used&#160;to&#160;specify&#160;the&#160;persona&#160;used&#160;by&#160;the&#160;model&#160;in&#160;its&#160;replies.</p>
+<p style="position:absolute;top:186px;left:105px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-evaluate-model-outputs-with-reference-to-gold-standard-answers">Evaluate&#160;model&#160;outputs&#160;with&#160;reference&#160;to&#160;gold-standard&#160;answers</a></p>
+<p style="position:absolute;top:245px;left:69px;white-space:nowrap" class="ft05"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactics">Tactics</a></p>
+<p style="position:absolute;top:414px;left:69px;white-space:nowrap" class="ft06"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/strategy-write-clear-instructions">Strategy:&#160;Write&#160;clear&#160;instructions</a></p>
+<p style="position:absolute;top:478px;left:69px;white-space:nowrap" class="ft010"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-include-details-in-your-query-to-get-more-relevant-answers">Tactic:&#160;Include&#160;details&#160;in&#160;your&#160;query&#160;to&#160;get&#160;more&#160;relevant&#160;answers</a></p>
+<p style="position:absolute;top:1085px;left:69px;white-space:nowrap" class="ft010"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-ask-the-model-to-adopt-a-persona">Tactic:&#160;Ask&#160;the&#160;model&#160;to&#160;adopt&#160;a&#160;persona</a></p>
+</div>
+<!-- Page 4 -->
+<a name="4"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft011{font-size:13px;font-family:DAAAAA+font000000002a3354b8;color:#202023;}
+	.ft012{font-size:16px;font-family:BAAAAA+font000000002a3354b8;color:#343740;}
+-->
+</style>
+<div id="page4-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice004.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:831px;white-space:nowrap" class="ft00">4/20</p>
+<p style="position:absolute;top:48px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:44px;left:199px;white-space:nowrap" class="ft07">When&#160;I&#160;ask&#160;for&#160;help&#160;to&#160;write&#160;something,&#160;you&#160;will&#160;reply&#160;with&#160;a&#160;document&#160;<br/>that&#160;contains&#160;at&#160;least&#160;one&#160;joke&#160;or&#160;playful&#160;comment&#160;in&#160;every&#160;paragraph.</p>
+<p style="position:absolute;top:120px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:116px;left:199px;white-space:nowrap" class="ft07">Write&#160;a&#160;thank&#160;you&#160;note&#160;to&#160;my&#160;steel&#160;bolt&#160;vendor&#160;for&#160;getting&#160;the&#160;delivery&#160;in&#160;<br/>on&#160;time&#160;and&#160;in&#160;short&#160;notice.&#160;This&#160;made&#160;it&#160;possible&#160;for&#160;us&#160;to&#160;deliver&#160;an&#160;<br/>important&#160;order.</p>
+<p style="position:absolute;top:226px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-playful-thank-you-note">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:337px;left:69px;white-space:nowrap" class="ft07">Delimiters&#160;like&#160;triple&#160;quotation&#160;marks,&#160;XML&#160;tags,&#160;section&#160;titles,&#160;etc.&#160;can&#160;help&#160;demarcate<br/>sections&#160;of&#160;text&#160;to&#160;be&#160;treated&#160;differently.</p>
+<p style="position:absolute;top:443px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:439px;left:199px;white-space:nowrap" class="ft01">Summarize&#160;the&#160;text&#160;delimited&#160;by&#160;triple&#160;quotes&#160;with&#160;a&#160;haiku.</p>
+<p style="position:absolute;top:493px;left:199px;white-space:nowrap" class="ft01">&#34;&#34;&#34;insert&#160;text&#160;here&#34;&#34;&#34;</p>
+<p style="position:absolute;top:549px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-delimiters-1">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:632px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:628px;left:199px;white-space:nowrap" class="ft07">You&#160;will&#160;be&#160;provided&#160;with&#160;a&#160;pair&#160;of&#160;articles&#160;(delimited&#160;with&#160;XML&#160;tags)&#160;<br/>about&#160;the&#160;same&#160;topic.&#160;First&#160;summarize&#160;the&#160;arguments&#160;of&#160;each&#160;article.&#160;<br/>Then&#160;indicate&#160;which&#160;of&#160;them&#160;makes&#160;a&#160;better&#160;argument&#160;and&#160;explain&#160;why.</p>
+<p style="position:absolute;top:731px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:727px;left:199px;white-space:nowrap" class="ft01">&lt;article&gt;&#160;insert&#160;ﬁrst&#160;article&#160;here&#160;&lt;/article&gt;</p>
+<p style="position:absolute;top:781px;left:199px;white-space:nowrap" class="ft01">&lt;article&gt;&#160;insert&#160;second&#160;article&#160;here&#160;&lt;/article&gt;</p>
+<p style="position:absolute;top:837px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-delimiters-2">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:920px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:916px;left:199px;white-space:nowrap" class="ft07">You&#160;will&#160;be&#160;provided&#160;with&#160;a&#160;thesis&#160;abstract&#160;and&#160;a&#160;suggested&#160;title&#160;for&#160;it.&#160;The&#160;<br/>thesis&#160;title&#160;should&#160;give&#160;the&#160;reader&#160;a&#160;good&#160;idea&#160;of&#160;the&#160;topic&#160;of&#160;the&#160;thesis&#160;<br/>but&#160;should&#160;also&#160;be&#160;eye-catching.&#160;If&#160;the&#160;title&#160;does&#160;not&#160;meet&#160;these&#160;criteria,&#160;<br/>suggest&#160;5&#160;alternatives.</p>
+<p style="position:absolute;top:1046px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:1042px;left:199px;white-space:nowrap" class="ft01">Abstract:&#160;insert&#160;abstract&#160;here</p>
+<p style="position:absolute;top:1096px;left:199px;white-space:nowrap" class="ft01">Title:&#160;insert&#160;title&#160;here</p>
+<p style="position:absolute;top:1152px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-delimiters-3">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:290px;left:69px;white-space:nowrap" class="ft010"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-delimiters-to-clearly-indicate-distinct-parts-of-the-input">Tactic:&#160;Use&#160;delimiters&#160;to&#160;clearly&#160;indicate&#160;distinct&#160;parts&#160;of&#160;the&#160;input</a></p>
+</div>
+<!-- Page 5 -->
+<a name="5"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page5-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice005.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:831px;white-space:nowrap" class="ft00">5/20</p>
+<p style="position:absolute;top:44px;left:69px;white-space:nowrap" class="ft07">For&#160;straightforward&#160;tasks&#160;such&#160;as&#160;these,&#160;using&#160;delimiters&#160;might&#160;not&#160;make&#160;a&#160;difference&#160;in<br/><a href="https://platform.openai.com/overview">the</a>&#160;output&#160;quality.&#160;However,&#160;the&#160;more&#160;complex&#160;a&#160;task&#160;is&#160;the&#160;more&#160;important&#160;it&#160;is&#160;to<br/>disambiguate&#160;task&#160;details.&#160;Don’t&#160;make&#160;GPTs&#160;work&#160;to&#160;understand&#160;exactly&#160;what&#160;you&#160;are<br/>asking&#160;of&#160;them.</p>
+<p style="position:absolute;top:232px;left:69px;white-space:nowrap" class="ft07">Some&#160;tasks&#160;are&#160;best&#160;speciﬁed&#160;as&#160;a&#160;sequence&#160;of&#160;steps.&#160;Writing&#160;the&#160;steps&#160;out&#160;explicitly&#160;can<br/>make&#160;it&#160;easier&#160;for&#160;the&#160;model&#160;to&#160;follow&#160;them.</p>
+<p style="position:absolute;top:337px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:333px;left:199px;white-space:nowrap" class="ft01">Use&#160;the&#160;following&#160;step-by-step&#160;instructions&#160;to&#160;respond&#160;to&#160;user&#160;inputs.</p>
+<p style="position:absolute;top:387px;left:199px;white-space:nowrap" class="ft07">Step&#160;1&#160;-&#160;The&#160;user&#160;will&#160;provide&#160;you&#160;with&#160;text&#160;in&#160;triple&#160;quotes.&#160;Summarize&#160;<br/>this&#160;text&#160;in&#160;one&#160;sentence&#160;with&#160;a&#160;preﬁx&#160;that&#160;says&#160;&#34;Summary:&#160;&#34;.</p>
+<p style="position:absolute;top:468px;left:199px;white-space:nowrap" class="ft07">Step&#160;2&#160;-&#160;Translate&#160;the&#160;summary&#160;from&#160;Step&#160;1&#160;into&#160;Spanish,&#160;with&#160;a&#160;preﬁx&#160;<br/>that&#160;says&#160;&#34;Translation:&#160;&#34;.</p>
+<p style="position:absolute;top:544px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:540px;left:199px;white-space:nowrap" class="ft01">&#34;&#34;&#34;insert&#160;text&#160;here&#34;&#34;&#34;</p>
+<p style="position:absolute;top:596px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-step-by-step-summarize-and-translate">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:708px;left:69px;white-space:nowrap" class="ft07">Providing&#160;general&#160;instructions&#160;that&#160;apply&#160;to&#160;all&#160;examples&#160;is&#160;generally&#160;more&#160;efﬁcient&#160;than<br/>demonstrating&#160;all&#160;permutations&#160;of&#160;a&#160;task&#160;by&#160;example,&#160;but&#160;in&#160;some&#160;cases&#160;providing<br/>examples&#160;may&#160;be&#160;easier.&#160;For&#160;example,&#160;if&#160;you&#160;intend&#160;for&#160;the&#160;model&#160;to&#160;copy&#160;a&#160;particular&#160;style<br/>of&#160;responding&#160;to&#160;user&#160;queries&#160;which&#160;is&#160;difﬁcult&#160;to&#160;describe&#160;explicitly.&#160;This&#160;is&#160;known&#160;as&#160;&#34;few-<br/>shot&#34;&#160;prompting.</p>
+<p style="position:absolute;top:894px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:890px;left:199px;white-space:nowrap" class="ft01">Answer&#160;in&#160;a&#160;consistent&#160;style.</p>
+<p style="position:absolute;top:939px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:935px;left:199px;white-space:nowrap" class="ft01">Teach&#160;me&#160;about&#160;patience.</p>
+<p style="position:absolute;top:984px;left:87px;white-space:nowrap" class="ft011">ASSISTANT</p>
+<p style="position:absolute;top:980px;left:199px;white-space:nowrap" class="ft07">The&#160;river&#160;that&#160;carves&#160;the&#160;deepest&#160;valley&#160;ﬂows&#160;from&#160;a&#160;modest&#160;spring;&#160;the&#160;<br/>grandest&#160;symphony&#160;originates&#160;from&#160;a&#160;single&#160;note;&#160;the&#160;most&#160;intricate&#160;<br/>tapestry&#160;begins&#160;with&#160;a&#160;solitary&#160;thread.</p>
+<p style="position:absolute;top:1083px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:1079px;left:199px;white-space:nowrap" class="ft01">Teach&#160;me&#160;about&#160;the&#160;ocean.</p>
+<p style="position:absolute;top:1135px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-chat-few-shot">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:185px;left:69px;white-space:nowrap" class="ft010"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-specify-the-steps-required-to-complete-a-task">Tactic:&#160;Specify&#160;the&#160;steps&#160;required&#160;to&#160;complete&#160;a&#160;task</a></p>
+<p style="position:absolute;top:661px;left:69px;white-space:nowrap" class="ft010"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-provide-examples">Tactic:&#160;Provide&#160;examples</a></p>
+</div>
+<!-- Page 6 -->
+<a name="6"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page6-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice006.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:831px;white-space:nowrap" class="ft00">6/20</p>
+<p style="position:absolute;top:90px;left:69px;white-space:nowrap" class="ft07">You&#160;can&#160;ask&#160;the&#160;model&#160;to&#160;produce&#160;outputs&#160;that&#160;are&#160;of&#160;a&#160;given&#160;target&#160;length.&#160;The&#160;targeted<br/>output&#160;length&#160;can&#160;be&#160;speciﬁed&#160;in&#160;terms&#160;of&#160;the&#160;count&#160;of&#160;words,&#160;sentences,&#160;paragraphs,<br/>bullet&#160;points,&#160;etc.&#160;Note&#160;however&#160;that&#160;instructing&#160;the&#160;model&#160;to&#160;generate&#160;a&#160;speciﬁc&#160;number&#160;of<br/>words&#160;does&#160;not&#160;work&#160;with&#160;high&#160;precision.&#160;The&#160;model&#160;can&#160;more&#160;reliably&#160;generate&#160;outputs<br/>with&#160;a&#160;speciﬁc&#160;number&#160;of&#160;paragraphs&#160;or&#160;bullet&#160;points.</p>
+<p style="position:absolute;top:276px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:272px;left:199px;white-space:nowrap" class="ft01">Summarize&#160;the&#160;text&#160;delimited&#160;by&#160;triple&#160;quotes&#160;in&#160;about&#160;50&#160;words.</p>
+<p style="position:absolute;top:326px;left:199px;white-space:nowrap" class="ft01">&#34;&#34;&#34;insert&#160;text&#160;here&#34;&#34;&#34;</p>
+<p style="position:absolute;top:382px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-summarize-text-50-words">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:465px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:461px;left:199px;white-space:nowrap" class="ft01">Summarize&#160;the&#160;text&#160;delimited&#160;by&#160;triple&#160;quotes&#160;in&#160;2&#160;paragraphs.</p>
+<p style="position:absolute;top:515px;left:199px;white-space:nowrap" class="ft01">&#34;&#34;&#34;insert&#160;text&#160;here&#34;&#34;&#34;</p>
+<p style="position:absolute;top:571px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-summarize-text-2-paragraphs">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:654px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:650px;left:199px;white-space:nowrap" class="ft01">Summarize&#160;the&#160;text&#160;delimited&#160;by&#160;triple&#160;quotes&#160;in&#160;3&#160;bullet&#160;points.</p>
+<p style="position:absolute;top:704px;left:199px;white-space:nowrap" class="ft01">&#34;&#34;&#34;insert&#160;text&#160;here&#34;&#34;&#34;</p>
+<p style="position:absolute;top:760px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-summarize-text-3-bullet-points">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:937px;left:69px;white-space:nowrap" class="ft07">If&#160;we&#160;can&#160;provide&#160;a&#160;model&#160;with&#160;trusted&#160;information&#160;that&#160;is&#160;relevant&#160;to&#160;the&#160;current&#160;query,<br/>then&#160;we&#160;can&#160;instruct&#160;the&#160;model&#160;to&#160;use&#160;the&#160;provided&#160;information&#160;to&#160;compose&#160;its&#160;answer.</p>
+<p style="position:absolute;top:1042px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:1038px;left:199px;white-space:nowrap" class="ft07">Use&#160;the&#160;provided&#160;articles&#160;delimited&#160;by&#160;triple&#160;quotes&#160;to&#160;answer&#160;questions.&#160;<br/>If&#160;the&#160;answer&#160;cannot&#160;be&#160;found&#160;in&#160;the&#160;articles,&#160;write&#160;&#34;I&#160;could&#160;not&#160;ﬁnd&#160;an&#160;<br/>answer.&#34;</p>
+<p style="position:absolute;top:43px;left:69px;white-space:nowrap" class="ft010"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-specify-the-desired-length-of-the-output">Tactic:&#160;Specify&#160;the&#160;desired&#160;length&#160;of&#160;the&#160;output</a></p>
+<p style="position:absolute;top:826px;left:69px;white-space:nowrap" class="ft06"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/strategy-provide-reference-text">Strategy:&#160;Provide&#160;reference&#160;text</a></p>
+<p style="position:absolute;top:890px;left:69px;white-space:nowrap" class="ft010"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-instruct-the-model-to-answer-using-a-reference-text">Tactic:&#160;Instruct&#160;the&#160;model&#160;to&#160;answer&#160;using&#160;a&#160;reference&#160;text</a></p>
+</div>
+<!-- Page 7 -->
+<a name="7"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft013{font-size:20px;line-height:26px;font-family:DAAAAA+font000000002a3354b8;color:#202023;}
+-->
+</style>
+<div id="page7-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice007.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:831px;white-space:nowrap" class="ft00">7/20</p>
+<p style="position:absolute;top:57px;left:87px;white-space:nowrap" class="ft011"><a href="https://platform.openai.com/overview">U</a>SER</p>
+<p style="position:absolute;top:53px;left:199px;white-space:nowrap" class="ft01">&lt;insert&#160;articles,&#160;each&#160;delimited&#160;by&#160;triple&#160;quotes&gt;</p>
+<p style="position:absolute;top:107px;left:199px;white-space:nowrap" class="ft01">Question:&#160;&lt;insert&#160;question&#160;here&gt;</p>
+<p style="position:absolute;top:163px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-answer-from-retrieved-documents">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:222px;left:69px;white-space:nowrap" class="ft07">Given&#160;that&#160;GPTs&#160;have&#160;limited&#160;context&#160;windows,&#160;in&#160;order&#160;to&#160;apply&#160;this&#160;tactic&#160;we&#160;need&#160;some<br/>way&#160;to&#160;dynamically&#160;lookup&#160;information&#160;that&#160;is&#160;relevant&#160;to&#160;the&#160;question&#160;being&#160;asked.</p>
+<p style="position:absolute;top:276px;left:69px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/embeddings/what-are-embeddings">Embeddings</a></p>
+<p style="position:absolute;top:276px;left:175px;white-space:nowrap" class="ft01"><a href="https://platform.openai.com/docs/guides/embeddings/what-are-embeddings">&#160;</a><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-embeddings-based-search-to-implement-efficient-knowledge-retrieval">can&#160;be&#160;used&#160;to&#160;implement&#160;efﬁcient&#160;knowledge&#160;retrieval.&#160;See&#160;the&#160;tactic&#160;</a></p>
+<p style="position:absolute;top:276px;left:761px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-embeddings-based-search-to-implement-efficient-knowledge-retrieval">&#34;Use</a></p>
+<p style="position:absolute;top:303px;left:69px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-embeddings-based-search-to-implement-efficient-knowledge-retrieval">embeddings-based&#160;search&#160;to&#160;implement&#160;efﬁcient&#160;knowledge&#160;retrieval&#34;</a></p>
+<p style="position:absolute;top:303px;left:656px;white-space:nowrap" class="ft01"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-embeddings-based-search-to-implement-efficient-knowledge-retrieval">&#160;for&#160;more&#160;details&#160;o</a>n</p>
+<p style="position:absolute;top:330px;left:69px;white-space:nowrap" class="ft01">how&#160;to&#160;implement&#160;this.</p>
+<p style="position:absolute;top:436px;left:69px;white-space:nowrap" class="ft07">If&#160;the&#160;input&#160;has&#160;been&#160;supplemented&#160;with&#160;relevant&#160;knowledge,&#160;it's&#160;straightforward&#160;to<br/>request&#160;that&#160;the&#160;model&#160;add&#160;citations&#160;to&#160;its&#160;answers&#160;by&#160;referencing&#160;passages&#160;from&#160;provided<br/>documents.&#160;Note&#160;that&#160;citations&#160;in&#160;the&#160;output&#160;can&#160;then&#160;be&#160;veriﬁed&#160;programmatically&#160;by<br/>string&#160;matching&#160;within&#160;the&#160;provided&#160;documents.</p>
+<p style="position:absolute;top:596px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:592px;left:199px;white-space:nowrap" class="ft07">You&#160;will&#160;be&#160;provided&#160;with&#160;a&#160;document&#160;delimited&#160;by&#160;triple&#160;quotes&#160;and&#160;a&#160;<br/>question.&#160;Your&#160;task&#160;is&#160;to&#160;answer&#160;the&#160;question&#160;using&#160;only&#160;the&#160;provided&#160;<br/>document&#160;and&#160;to&#160;cite&#160;the&#160;passage(s)&#160;of&#160;the&#160;document&#160;used&#160;to&#160;answer&#160;the&#160;<br/>question.&#160;If&#160;the&#160;document&#160;does&#160;not&#160;contain&#160;the&#160;information&#160;needed&#160;to&#160;<br/>answer&#160;this&#160;question&#160;then&#160;simply&#160;write:&#160;&#34;Insufﬁcient&#160;information.&#34;&#160;If&#160;an&#160;<br/>answer&#160;to&#160;the&#160;question&#160;is&#160;provided,&#160;it&#160;must&#160;be&#160;annotated&#160;with&#160;a&#160;citation.&#160;<br/>Use&#160;the&#160;following&#160;format&#160;for&#160;to&#160;cite&#160;relevant&#160;passages&#160;({&#34;citation&#34;:&#160;…}).</p>
+<p style="position:absolute;top:803px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:799px;left:199px;white-space:nowrap" class="ft01">&#34;&#34;&#34;&lt;insert&#160;document&#160;here&gt;&#34;&#34;&#34;</p>
+<p style="position:absolute;top:853px;left:199px;white-space:nowrap" class="ft01">Question:&#160;&lt;insert&#160;question&#160;here&gt;</p>
+<p style="position:absolute;top:909px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-answer-with-citation">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:1113px;left:69px;white-space:nowrap" class="ft07">For&#160;tasks&#160;in&#160;which&#160;lots&#160;of&#160;independent&#160;sets&#160;of&#160;instructions&#160;are&#160;needed&#160;to&#160;handle&#160;different<br/>cases,&#160;it&#160;can&#160;be&#160;beneﬁcial&#160;to&#160;ﬁrst&#160;classify&#160;the&#160;type&#160;of&#160;query&#160;and&#160;to&#160;use&#160;that&#160;classiﬁcation&#160;to<br/>determine&#160;which&#160;instructions&#160;are&#160;needed.&#160;This&#160;can&#160;be&#160;achieved&#160;by&#160;deﬁning&#160;ﬁxed<br/>categories&#160;and&#160;hardcoding&#160;instructions&#160;that&#160;are&#160;relevant&#160;for&#160;handling&#160;tasks&#160;in&#160;a&#160;given</p>
+<p style="position:absolute;top:389px;left:69px;white-space:nowrap" class="ft010"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-instruct-the-model-to-answer-with-citations-from-a-reference-text">Tactic:&#160;Instruct&#160;the&#160;model&#160;to&#160;answer&#160;with&#160;citations&#160;from&#160;a&#160;reference&#160;text</a></p>
+<p style="position:absolute;top:975px;left:69px;white-space:nowrap" class="ft06"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/strategy-split-complex-tasks-into-simpler-subtasks">Strategy:&#160;Split&#160;complex&#160;tasks&#160;into&#160;simpler&#160;subtasks</a></p>
+<p style="position:absolute;top:1039px;left:69px;white-space:nowrap" class="ft013"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-intent-classification-to-identify-the-most-relevant-instructions-for-a-user-query">Tactic:&#160;Use&#160;intent&#160;classiﬁcation&#160;to&#160;identify&#160;the&#160;most&#160;relevant&#160;instructions&#160;for&#160;a<br/>user&#160;query</a></p>
+</div>
+<!-- Page 8 -->
+<a name="8"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page8-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice008.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:831px;white-space:nowrap" class="ft00">8/20</p>
+<p style="position:absolute;top:44px;left:69px;white-space:nowrap" class="ft07">category.&#160;This&#160;process&#160;can&#160;also&#160;be&#160;applied&#160;recursively&#160;to&#160;decompose&#160;a&#160;task&#160;into&#160;a<br/><a href="https://platform.openai.com/overview">seq</a>uence&#160;of&#160;stages.&#160;The&#160;advantage&#160;of&#160;this&#160;approach&#160;is&#160;that&#160;each&#160;query&#160;will&#160;contain&#160;only<br/>those&#160;instructions&#160;that&#160;are&#160;required&#160;to&#160;perform&#160;the&#160;next&#160;stage&#160;of&#160;a&#160;task&#160;which&#160;can&#160;result&#160;in<br/>lower&#160;error&#160;rates&#160;compared&#160;to&#160;using&#160;a&#160;single&#160;query&#160;to&#160;perform&#160;the&#160;whole&#160;task.&#160;This&#160;can&#160;also<br/>result&#160;in&#160;lower&#160;costs&#160;since&#160;larger&#160;prompts&#160;cost&#160;more&#160;to&#160;run&#160;(</p>
+<p style="position:absolute;top:152px;left:560px;white-space:nowrap" class="ft03"><a href="https://openai.com/pricing">see&#160;pricing&#160;information</a></p>
+<p style="position:absolute;top:152px;left:753px;white-space:nowrap" class="ft01">).</p>
+<p style="position:absolute;top:196px;left:69px;white-space:nowrap" class="ft07">Suppose&#160;for&#160;example&#160;that&#160;for&#160;a&#160;customer&#160;service&#160;application,&#160;queries&#160;could&#160;be&#160;usefully<br/>classiﬁed&#160;as&#160;follows:</p>
+<p style="position:absolute;top:301px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:297px;left:199px;white-space:nowrap" class="ft07">You&#160;will&#160;be&#160;provided&#160;with&#160;customer&#160;service&#160;queries.&#160;Classify&#160;each&#160;query&#160;<br/>into&#160;a&#160;primary&#160;category&#160;and&#160;a&#160;secondary&#160;category.&#160;Provide&#160;your&#160;output&#160;in&#160;<br/>json&#160;format&#160;with&#160;the&#160;keys:&#160;primary&#160;and&#160;secondary.</p>
+<p style="position:absolute;top:405px;left:199px;white-space:nowrap" class="ft07">Primary&#160;categories:&#160;Billing,&#160;Technical&#160;Support,&#160;Account&#160;Management,&#160;or&#160;<br/>General&#160;Inquiry.</p>
+<p style="position:absolute;top:486px;left:199px;white-space:nowrap" class="ft07">Billing&#160;secondary&#160;categories:<br/>-&#160;Unsubscribe&#160;or&#160;upgrade<br/>-&#160;Add&#160;a&#160;payment&#160;method<br/>-&#160;Explanation&#160;for&#160;charge<br/>-&#160;Dispute&#160;a&#160;charge</p>
+<p style="position:absolute;top:648px;left:199px;white-space:nowrap" class="ft07">Technical&#160;Support&#160;secondary&#160;categories:<br/>-&#160;Troubleshooting<br/>-&#160;Device&#160;compatibility<br/>-&#160;Software&#160;updates</p>
+<p style="position:absolute;top:783px;left:199px;white-space:nowrap" class="ft07">Account&#160;Management&#160;secondary&#160;categories:<br/>-&#160;Password&#160;reset<br/>-&#160;Update&#160;personal&#160;information<br/>-&#160;Close&#160;account<br/>-&#160;Account&#160;security</p>
+<p style="position:absolute;top:945px;left:199px;white-space:nowrap" class="ft07">General&#160;Inquiry&#160;secondary&#160;categories:<br/>-&#160;Product&#160;information<br/>-&#160;Pricing<br/>-&#160;Feedback<br/>-&#160;Speak&#160;to&#160;a&#160;human</p>
+<p style="position:absolute;top:1102px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:1098px;left:199px;white-space:nowrap" class="ft01">I&#160;need&#160;to&#160;get&#160;my&#160;internet&#160;working&#160;again.</p>
+<p style="position:absolute;top:1154px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-decomposition-by-intent-classification-1">Open&#160;in&#160;Playground</a></p>
+</div>
+<!-- Page 9 -->
+<a name="9"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page9-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice009.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:831px;white-space:nowrap" class="ft00">9/20</p>
+<p style="position:absolute;top:44px;left:69px;white-space:nowrap" class="ft07">Based&#160;on&#160;the&#160;classiﬁcation&#160;of&#160;the&#160;customer&#160;query,&#160;a&#160;set&#160;of&#160;more&#160;speciﬁc&#160;instructions&#160;can<br/><a href="https://platform.openai.com/overview">be&#160;p</a>rovided&#160;to&#160;a&#160;GPT&#160;model&#160;to&#160;handle&#160;next&#160;steps.&#160;For&#160;example,&#160;suppose&#160;the&#160;customer<br/>requires&#160;help&#160;with&#160;&#34;troubleshooting&#34;.</p>
+<p style="position:absolute;top:176px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:172px;left:199px;white-space:nowrap" class="ft07">You&#160;will&#160;be&#160;provided&#160;with&#160;customer&#160;service&#160;inquiries&#160;that&#160;require&#160;<br/>troubleshooting&#160;in&#160;a&#160;technical&#160;support&#160;context.&#160;Help&#160;the&#160;user&#160;by:</p>
+<p style="position:absolute;top:253px;left:199px;white-space:nowrap" class="ft07">-&#160;Ask&#160;them&#160;to&#160;check&#160;that&#160;all&#160;cables&#160;to/from&#160;the&#160;router&#160;are&#160;connected.&#160;<br/>Note&#160;that&#160;it&#160;is&#160;common&#160;for&#160;cables&#160;to&#160;come&#160;loose&#160;over&#160;time.<br/>-&#160;If&#160;all&#160;cables&#160;are&#160;connected&#160;and&#160;the&#160;issue&#160;persists,&#160;ask&#160;them&#160;which&#160;<br/>router&#160;model&#160;they&#160;are&#160;using<br/>-&#160;Now&#160;you&#160;will&#160;advise&#160;them&#160;how&#160;to&#160;restart&#160;their&#160;device:<br/>--&#160;If&#160;the&#160;model&#160;number&#160;is&#160;MTD-327J,&#160;advise&#160;them&#160;to&#160;push&#160;the&#160;red&#160;button&#160;<br/>and&#160;hold&#160;it&#160;for&#160;5&#160;seconds,&#160;then&#160;wait&#160;5&#160;minutes&#160;before&#160;testing&#160;the&#160;<br/>connection.<br/>--&#160;If&#160;the&#160;model&#160;number&#160;is&#160;MTD-327S,&#160;advise&#160;them&#160;to&#160;unplug&#160;and&#160;replug&#160;it,&#160;<br/>then&#160;wait&#160;5&#160;minutes&#160;before&#160;testing&#160;the&#160;connection.<br/>-&#160;If&#160;the&#160;customer's&#160;issue&#160;persists&#160;after&#160;restarting&#160;the&#160;device&#160;and&#160;waiting&#160;<br/>5&#160;minutes,&#160;connect&#160;them&#160;to&#160;IT&#160;support&#160;by&#160;outputting&#160;{&#34;IT&#160;support&#160;<br/>requested&#34;}.<br/>-&#160;If&#160;the&#160;user&#160;starts&#160;asking&#160;questions&#160;that&#160;are&#160;unrelated&#160;to&#160;this&#160;topic&#160;then&#160;<br/>conﬁrm&#160;if&#160;they&#160;would&#160;like&#160;to&#160;end&#160;the&#160;current&#160;chat&#160;about&#160;troubleshooting&#160;<br/>and&#160;classify&#160;their&#160;request&#160;according&#160;to&#160;the&#160;following&#160;scheme:</p>
+<p style="position:absolute;top:712px;left:199px;white-space:nowrap" class="ft01">&lt;insert&#160;primary/secondary&#160;classiﬁcation&#160;scheme&#160;from&#160;above&#160;here&gt;</p>
+<p style="position:absolute;top:761px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:757px;left:199px;white-space:nowrap" class="ft01">I&#160;need&#160;to&#160;get&#160;my&#160;internet&#160;working&#160;again.</p>
+<p style="position:absolute;top:813px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-decomposition-by-intent-classification-2">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:872px;left:69px;white-space:nowrap" class="ft07">Notice&#160;that&#160;the&#160;model&#160;has&#160;been&#160;instructed&#160;to&#160;emit&#160;special&#160;strings&#160;to&#160;indicate&#160;when&#160;the<br/>state&#160;of&#160;the&#160;conversation&#160;changes.&#160;This&#160;enables&#160;us&#160;to&#160;turn&#160;our&#160;system&#160;into&#160;a&#160;state&#160;machine<br/>where&#160;the&#160;state&#160;determines&#160;which&#160;instructions&#160;are&#160;injected.&#160;By&#160;keeping&#160;track&#160;of&#160;state,&#160;what<br/>instructions&#160;are&#160;relevant&#160;at&#160;that&#160;state,&#160;and&#160;also&#160;optionally&#160;what&#160;state&#160;transitions&#160;are<br/>allowed&#160;from&#160;that&#160;state,&#160;we&#160;can&#160;put&#160;guardrails&#160;around&#160;the&#160;user&#160;experience&#160;that&#160;would&#160;be<br/>hard&#160;to&#160;achieve&#160;with&#160;a&#160;less&#160;structured&#160;approach.</p>
+<p style="position:absolute;top:1141px;left:69px;white-space:nowrap" class="ft07">Since&#160;GPTs&#160;have&#160;a&#160;ﬁxed&#160;context&#160;length,&#160;dialogue&#160;between&#160;a&#160;user&#160;and&#160;an&#160;assistant&#160;in&#160;which<br/>the&#160;entire&#160;conversation&#160;is&#160;included&#160;in&#160;the&#160;context&#160;window&#160;cannot&#160;continue&#160;indeﬁnitely.</p>
+<p style="position:absolute;top:1067px;left:69px;white-space:nowrap" class="ft013"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-for-dialogue-applications-that-require-very-long-conversations-summarize-or-filter-previous-dialogue">Tactic:&#160;For&#160;dialogue&#160;applications&#160;that&#160;require&#160;very&#160;long&#160;conversations,<br/>summarize&#160;or&#160;ﬁlter&#160;previous&#160;dialogue</a></p>
+</div>
+<!-- Page 10 -->
+<a name="10"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page10-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice010.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:825px;white-space:nowrap" class="ft00">10/20</p>
+<p style="position:absolute;top:44px;left:69px;white-space:nowrap" class="ft07">There&#160;are&#160;various&#160;workarounds&#160;to&#160;this&#160;problem,&#160;one&#160;of&#160;which&#160;is&#160;to&#160;summarize&#160;previous<br/><a href="https://platform.openai.com/overview">turn</a>s&#160;in&#160;the&#160;conversation.&#160;Once&#160;the&#160;size&#160;of&#160;the&#160;input&#160;reaches&#160;a&#160;predetermined&#160;threshold<br/>length,&#160;this&#160;could&#160;trigger&#160;a&#160;query&#160;that&#160;summarizes&#160;part&#160;of&#160;the&#160;conversation&#160;and&#160;the<br/>summary&#160;of&#160;the&#160;prior&#160;conversation&#160;could&#160;be&#160;included&#160;as&#160;part&#160;of&#160;the&#160;system&#160;message.<br/>Alternatively,&#160;prior&#160;conversation&#160;could&#160;be&#160;summarized&#160;asynchronously&#160;in&#160;the&#160;background<br/>throughout&#160;the&#160;entire&#160;conversation.</p>
+<p style="position:absolute;top:223px;left:69px;white-space:nowrap" class="ft07">An&#160;alternative&#160;solution&#160;is&#160;to&#160;dynamically&#160;select&#160;previous&#160;parts&#160;of&#160;the&#160;conversation&#160;that&#160;are<br/><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-embeddings-based-search-to-implement-efficient-knowledge-retrieval">most&#160;relevant&#160;to&#160;the&#160;current&#160;query.&#160;See&#160;the&#160;tactic&#160;</a></p>
+<p style="position:absolute;top:250px;left:478px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-embeddings-based-search-to-implement-efficient-knowledge-retrieval">&#34;Use&#160;embeddings-based&#160;search&#160;to</a></p>
+<p style="position:absolute;top:277px;left:69px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-embeddings-based-search-to-implement-efficient-knowledge-retrieval">implement&#160;efﬁcient&#160;knowledge&#160;retrieval&#34;</a></p>
+<p style="position:absolute;top:277px;left:407px;white-space:nowrap" class="ft01"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-embeddings-based-search-to-implement-efficient-knowledge-retrieval">.</a></p>
+<p style="position:absolute;top:411px;left:69px;white-space:nowrap" class="ft07">Since&#160;GPTs&#160;have&#160;a&#160;ﬁxed&#160;context&#160;length,&#160;they&#160;cannot&#160;be&#160;used&#160;to&#160;summarize&#160;a&#160;text&#160;longer<br/>than&#160;the&#160;context&#160;length&#160;minus&#160;the&#160;length&#160;of&#160;the&#160;generated&#160;summary&#160;in&#160;a&#160;single&#160;query.</p>
+<p style="position:absolute;top:481px;left:69px;white-space:nowrap" class="ft07">To&#160;summarize&#160;a&#160;very&#160;long&#160;document&#160;such&#160;as&#160;a&#160;book&#160;we&#160;can&#160;use&#160;a&#160;sequence&#160;of&#160;queries&#160;to<br/>summarize&#160;each&#160;section&#160;of&#160;the&#160;document.&#160;Section&#160;summaries&#160;can&#160;be&#160;concatenated&#160;and<br/>summarized&#160;producing&#160;summaries&#160;of&#160;summaries.&#160;This&#160;process&#160;can&#160;proceed&#160;recursively<br/>until&#160;an&#160;entire&#160;document&#160;is&#160;summarized.&#160;If&#160;it’s&#160;necessary&#160;to&#160;use&#160;information&#160;about&#160;earlier<br/>sections&#160;in&#160;order&#160;to&#160;make&#160;sense&#160;of&#160;later&#160;sections,&#160;then&#160;a&#160;further&#160;trick&#160;that&#160;can&#160;be&#160;useful&#160;is<br/>to&#160;include&#160;a&#160;running&#160;summary&#160;of&#160;the&#160;text&#160;that&#160;precedes&#160;any&#160;given&#160;point&#160;in&#160;the&#160;book&#160;while<br/>summarizing&#160;content&#160;at&#160;that&#160;point.&#160;The&#160;effectiveness&#160;of&#160;this&#160;procedure&#160;for&#160;summarizing<br/>books&#160;has&#160;been&#160;studied&#160;in&#160;previous&#160;</p>
+<p style="position:absolute;top:670px;left:364px;white-space:nowrap" class="ft03"><a href="https://openai.com/research/summarizing-books">research</a></p>
+<p style="position:absolute;top:670px;left:437px;white-space:nowrap" class="ft01"><a href="https://openai.com/research/summarizing-books">&#160;</a>by&#160;OpenAI&#160;using&#160;variants&#160;of&#160;GPT-3.</p>
+<p style="position:absolute;top:870px;left:69px;white-space:nowrap" class="ft07">Sometimes&#160;we&#160;get&#160;better&#160;results&#160;when&#160;we&#160;explicitly&#160;instruct&#160;the&#160;model&#160;to&#160;reason&#160;from&#160;ﬁrst<br/>principles&#160;before&#160;coming&#160;to&#160;a&#160;conclusion.&#160;Suppose&#160;for&#160;example&#160;we&#160;want&#160;a&#160;model&#160;to<br/>evaluate&#160;a&#160;student’s&#160;solution&#160;to&#160;a&#160;math&#160;problem.&#160;The&#160;most&#160;obvious&#160;way&#160;to&#160;approach&#160;this&#160;is<br/>to&#160;simply&#160;ask&#160;the&#160;model&#160;if&#160;the&#160;student's&#160;solution&#160;is&#160;correct&#160;or&#160;not.</p>
+<p style="position:absolute;top:1029px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:1025px;left:199px;white-space:nowrap" class="ft01">Determine&#160;if&#160;the&#160;student's&#160;solution&#160;is&#160;correct&#160;or&#160;not.</p>
+<p style="position:absolute;top:1074px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:1070px;left:199px;white-space:nowrap" class="ft07">Problem&#160;Statement:&#160;I'm&#160;building&#160;a&#160;solar&#160;power&#160;installation&#160;and&#160;I&#160;need&#160;<br/>help&#160;working&#160;out&#160;the&#160;ﬁnancials.<br/>-&#160;Land&#160;costs&#160;$100&#160;/&#160;square&#160;foot<br/>-&#160;I&#160;can&#160;buy&#160;solar&#160;panels&#160;for&#160;$250&#160;/&#160;square&#160;foot<br/>-&#160;I&#160;negotiated&#160;a&#160;contract&#160;for&#160;maintenance&#160;that&#160;will&#160;cost&#160;me&#160;a&#160;ﬂat&#160;$100k&#160;</p>
+<p style="position:absolute;top:337px;left:69px;white-space:nowrap" class="ft013"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-summarize-long-documents-piecewise-and-construct-a-full-summary-recursively">Tactic:&#160;Summarize&#160;long&#160;documents&#160;piecewise&#160;and&#160;construct&#160;a&#160;full&#160;summary<br/>recursively</a></p>
+<p style="position:absolute;top:732px;left:69px;white-space:nowrap" class="ft06"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/strategy-give-gpts-time-to-think">Strategy:&#160;Give&#160;GPTs&#160;time&#160;to&#160;&#34;think&#34;</a></p>
+<p style="position:absolute;top:796px;left:69px;white-space:nowrap" class="ft013"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-instruct-the-model-to-work-out-its-own-solution-before-rushing-to-a-conclusion">Tactic:&#160;Instruct&#160;the&#160;model&#160;to&#160;work&#160;out&#160;its&#160;own&#160;solution&#160;before&#160;rushing&#160;to&#160;a<br/>conclusion</a></p>
+</div>
+<!-- Page 11 -->
+<a name="11"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page11-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice011.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:826px;white-space:nowrap" class="ft00">11/20</p>
+<p style="position:absolute;top:44px;left:199px;white-space:nowrap" class="ft07">per&#160;year,&#160;and&#160;an&#160;additional&#160;$10&#160;/&#160;square&#160;foot<br/>What&#160;is&#160;the&#160;total&#160;cost&#160;for&#160;the&#160;ﬁrst&#160;year&#160;of&#160;operations&#160;as&#160;a&#160;function&#160;of&#160;the&#160;<br/>number&#160;of&#160;square&#160;feet.</p>
+<p style="position:absolute;top:152px;left:199px;white-space:nowrap" class="ft07">Student's&#160;Solution:&#160;Let&#160;x&#160;be&#160;the&#160;size&#160;of&#160;the&#160;installation&#160;in&#160;square&#160;feet.<br/>1.&#160;Land&#160;cost:&#160;100x<br/>2.&#160;Solar&#160;panel&#160;cost:&#160;250x<br/>3.&#160;Maintenance&#160;cost:&#160;100,000&#160;+&#160;100x<br/>Total&#160;cost:&#160;100x&#160;+&#160;250x&#160;+&#160;100,000&#160;+&#160;100x&#160;=&#160;450x&#160;+&#160;100,000</p>
+<p style="position:absolute;top:309px;left:87px;white-space:nowrap" class="ft011">ASSISTANT</p>
+<p style="position:absolute;top:305px;left:199px;white-space:nowrap" class="ft01">The&#160;student's&#160;solution&#160;is&#160;correct.</p>
+<p style="position:absolute;top:361px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-rushing-to-a-conclusion">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:420px;left:69px;white-space:nowrap" class="ft07">But&#160;the&#160;student's&#160;solution&#160;is&#160;actually&#160;not&#160;correct!&#160;We&#160;can&#160;get&#160;the&#160;model&#160;to&#160;successfully<br/>notice&#160;this&#160;by&#160;prompting&#160;the&#160;model&#160;to&#160;generate&#160;its&#160;own&#160;solution&#160;ﬁrst.</p>
+<p style="position:absolute;top:525px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:521px;left:199px;white-space:nowrap" class="ft07">First&#160;work&#160;out&#160;your&#160;own&#160;solution&#160;to&#160;the&#160;problem.&#160;Then&#160;compare&#160;your&#160;<br/>solution&#160;to&#160;the&#160;student's&#160;solution&#160;and&#160;evaluate&#160;if&#160;the&#160;student's&#160;solution&#160;is&#160;<br/>correct&#160;or&#160;not.&#160;Don't&#160;decide&#160;if&#160;the&#160;student's&#160;solution&#160;is&#160;correct&#160;until&#160;you&#160;<br/>have&#160;done&#160;the&#160;problem&#160;yourself.</p>
+<p style="position:absolute;top:651px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:647px;left:199px;white-space:nowrap" class="ft07">Problem&#160;Statement:&#160;I'm&#160;building&#160;a&#160;solar&#160;power&#160;installation&#160;and&#160;I&#160;need&#160;<br/>help&#160;working&#160;out&#160;the&#160;ﬁnancials.<br/>-&#160;Land&#160;costs&#160;$100&#160;/&#160;square&#160;foot<br/>-&#160;I&#160;can&#160;buy&#160;solar&#160;panels&#160;for&#160;$250&#160;/&#160;square&#160;foot<br/>-&#160;I&#160;negotiated&#160;a&#160;contract&#160;for&#160;maintenance&#160;that&#160;will&#160;cost&#160;me&#160;a&#160;ﬂat&#160;$100k&#160;<br/>per&#160;year,&#160;and&#160;an&#160;additional&#160;$10&#160;/&#160;square&#160;foot<br/>What&#160;is&#160;the&#160;total&#160;cost&#160;for&#160;the&#160;ﬁrst&#160;year&#160;of&#160;operations&#160;as&#160;a&#160;function&#160;of&#160;the&#160;<br/>number&#160;of&#160;square&#160;feet.</p>
+<p style="position:absolute;top:890px;left:199px;white-space:nowrap" class="ft07">Student's&#160;Solution:&#160;Let&#160;x&#160;be&#160;the&#160;size&#160;of&#160;the&#160;installation&#160;in&#160;square&#160;feet.<br/>1.&#160;Land&#160;cost:&#160;100x<br/>2.&#160;Solar&#160;panel&#160;cost:&#160;250x<br/>3.&#160;Maintenance&#160;cost:&#160;100,000&#160;+&#160;100x<br/>Total&#160;cost:&#160;100x&#160;+&#160;250x&#160;+&#160;100,000&#160;+&#160;100x&#160;=&#160;450x&#160;+&#160;100,000</p>
+<p style="position:absolute;top:1047px;left:87px;white-space:nowrap" class="ft011">ASSISTANT</p>
+<p style="position:absolute;top:1043px;left:199px;white-space:nowrap" class="ft07">Let&#160;x&#160;be&#160;the&#160;size&#160;of&#160;the&#160;installation&#160;in&#160;square&#160;feet.<br/>1.&#160;Land&#160;cost:&#160;100x<br/>2.&#160;Solar&#160;panel&#160;cost:&#160;250x<br/>3.&#160;Maintenance&#160;cost:&#160;100,000&#160;+&#160;10x<br/>Total&#160;cost:&#160;100x&#160;+&#160;250x&#160;+&#160;100,000&#160;+&#160;10x&#160;=&#160;360x&#160;+&#160;100,000</p>
+</div>
+<!-- Page 12 -->
+<a name="12"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page12-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice012.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:825px;white-space:nowrap" class="ft00">12/20</p>
+<p style="position:absolute;top:44px;left:199px;white-space:nowrap" class="ft07">The&#160;student's&#160;solution&#160;is&#160;incorrect.&#160;They&#160;made&#160;an&#160;error&#160;in&#160;the&#160;<br/>maintenance&#160;cost&#160;calculation,&#160;using&#160;100x&#160;instead&#160;of&#160;10x.&#160;The&#160;correct&#160;<br/>total&#160;cost&#160;for&#160;the&#160;ﬁrst&#160;year&#160;of&#160;operations&#160;is&#160;360x&#160;+&#160;100,000.</p>
+<p style="position:absolute;top:154px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-avoid-rushing-to-a-conclusion">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:292px;left:69px;white-space:nowrap" class="ft07">The&#160;previous&#160;tactic&#160;demonstrates&#160;that&#160;it&#160;is&#160;sometimes&#160;important&#160;for&#160;the&#160;model&#160;to&#160;reason&#160;in<br/>detail&#160;about&#160;a&#160;problem&#160;before&#160;answering&#160;a&#160;speciﬁc&#160;question.&#160;For&#160;some&#160;applications,&#160;the<br/>reasoning&#160;process&#160;that&#160;a&#160;model&#160;uses&#160;to&#160;arrive&#160;at&#160;a&#160;ﬁnal&#160;answer&#160;would&#160;be&#160;inappropriate&#160;to<br/>share&#160;with&#160;the&#160;user.&#160;For&#160;example,&#160;in&#160;tutoring&#160;applications&#160;we&#160;may&#160;want&#160;to&#160;encourage<br/>students&#160;to&#160;work&#160;out&#160;their&#160;own&#160;answers,&#160;but&#160;a&#160;model’s&#160;reasoning&#160;process&#160;about&#160;the<br/>student’s&#160;solution&#160;could&#160;reveal&#160;the&#160;answer&#160;to&#160;the&#160;student.</p>
+<p style="position:absolute;top:471px;left:69px;white-space:nowrap" class="ft07">Inner&#160;monologue&#160;is&#160;a&#160;tactic&#160;that&#160;can&#160;be&#160;used&#160;to&#160;mitigate&#160;this.&#160;The&#160;idea&#160;of&#160;inner&#160;monologue<br/>is&#160;to&#160;instruct&#160;the&#160;model&#160;to&#160;put&#160;parts&#160;of&#160;the&#160;output&#160;that&#160;are&#160;meant&#160;to&#160;be&#160;hidden&#160;from&#160;the&#160;user<br/>into&#160;a&#160;structured&#160;format&#160;that&#160;makes&#160;parsing&#160;them&#160;easy.&#160;Then&#160;before&#160;presenting&#160;the&#160;output<br/>to&#160;the&#160;user,&#160;the&#160;output&#160;is&#160;parsed&#160;and&#160;only&#160;part&#160;of&#160;the&#160;output&#160;is&#160;made&#160;visible.</p>
+<p style="position:absolute;top:631px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:627px;left:199px;white-space:nowrap" class="ft01">Follow&#160;these&#160;steps&#160;to&#160;answer&#160;the&#160;user&#160;queries.</p>
+<p style="position:absolute;top:681px;left:199px;white-space:nowrap" class="ft07">Step&#160;1&#160;-&#160;First&#160;work&#160;out&#160;your&#160;own&#160;solution&#160;to&#160;the&#160;problem.&#160;Don't&#160;rely&#160;on&#160;the&#160;<br/>student's&#160;solution&#160;since&#160;it&#160;may&#160;be&#160;incorrect.&#160;Enclose&#160;all&#160;your&#160;work&#160;for&#160;this&#160;<br/>step&#160;within&#160;triple&#160;quotes&#160;(&#34;&#34;&#34;).</p>
+<p style="position:absolute;top:789px;left:199px;white-space:nowrap" class="ft07">Step&#160;2&#160;-&#160;Compare&#160;your&#160;solution&#160;to&#160;the&#160;student's&#160;solution&#160;and&#160;evaluate&#160;if&#160;<br/>the&#160;student's&#160;solution&#160;is&#160;correct&#160;or&#160;not.&#160;Enclose&#160;all&#160;your&#160;work&#160;for&#160;this&#160;step&#160;<br/>within&#160;triple&#160;quotes&#160;(&#34;&#34;&#34;).</p>
+<p style="position:absolute;top:897px;left:199px;white-space:nowrap" class="ft07">Step&#160;3&#160;-&#160;If&#160;the&#160;student&#160;made&#160;a&#160;mistake,&#160;determine&#160;what&#160;hint&#160;you&#160;could&#160;<br/>give&#160;the&#160;student&#160;without&#160;giving&#160;away&#160;the&#160;answer.&#160;Enclose&#160;all&#160;your&#160;work&#160;for&#160;<br/>this&#160;step&#160;within&#160;triple&#160;quotes&#160;(&#34;&#34;&#34;).</p>
+<p style="position:absolute;top:1005px;left:199px;white-space:nowrap" class="ft07">Step&#160;4&#160;-&#160;If&#160;the&#160;student&#160;made&#160;a&#160;mistake,&#160;provide&#160;the&#160;hint&#160;from&#160;the&#160;<br/>previous&#160;step&#160;to&#160;the&#160;student&#160;(outside&#160;of&#160;triple&#160;quotes).&#160;Instead&#160;of&#160;writing&#160;<br/>&#34;Step&#160;4&#160;-&#160;...&#34;&#160;write&#160;&#34;Hint:&#34;.</p>
+<p style="position:absolute;top:1108px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:1104px;left:199px;white-space:nowrap" class="ft01">Problem&#160;Statement:&#160;&lt;insert&#160;problem&#160;statement&gt;</p>
+<p style="position:absolute;top:1158px;left:199px;white-space:nowrap" class="ft01">Student&#160;Solution:&#160;&lt;insert&#160;student&#160;solution&gt;</p>
+<p style="position:absolute;top:218px;left:69px;white-space:nowrap" class="ft013"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-inner-monologue-or-a-sequence-of-queries-to-hide-the-model-s-reasoning-process">Tactic:&#160;Use&#160;inner&#160;monologue&#160;or&#160;a&#160;sequence&#160;of&#160;queries&#160;to&#160;hide&#160;the&#160;model's<br/>reasoning&#160;process</a></p>
+</div>
+<!-- Page 13 -->
+<a name="13"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page13-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice013.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:825px;white-space:nowrap" class="ft00">13/20</p>
+<p style="position:absolute;top:53px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-inner-monologue">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:111px;left:69px;white-space:nowrap" class="ft07">Alternatively,&#160;this&#160;can&#160;be&#160;achieved&#160;with&#160;a&#160;sequence&#160;of&#160;queries&#160;in&#160;which&#160;all&#160;except&#160;the&#160;last<br/>have&#160;their&#160;output&#160;hidden&#160;from&#160;the&#160;end&#160;user.</p>
+<p style="position:absolute;top:182px;left:69px;white-space:nowrap" class="ft07">First,&#160;we&#160;can&#160;ask&#160;the&#160;model&#160;to&#160;solve&#160;the&#160;problem&#160;on&#160;its&#160;own.&#160;Since&#160;this&#160;initial&#160;query&#160;doesn't<br/>require&#160;the&#160;student’s&#160;solution,&#160;it&#160;can&#160;be&#160;omitted.&#160;This&#160;provides&#160;the&#160;additional&#160;advantage<br/>that&#160;there&#160;is&#160;no&#160;chance&#160;that&#160;the&#160;model’s&#160;solution&#160;will&#160;be&#160;biased&#160;by&#160;the&#160;student’s&#160;attempted<br/>solution.</p>
+<p style="position:absolute;top:341px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:337px;left:199px;white-space:nowrap" class="ft01">&lt;insert&#160;problem&#160;statement&gt;</p>
+<p style="position:absolute;top:393px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-query-sequence-1">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:452px;left:69px;white-space:nowrap" class="ft07">Next,&#160;we&#160;can&#160;have&#160;the&#160;model&#160;use&#160;all&#160;available&#160;information&#160;to&#160;assess&#160;the&#160;correctness&#160;of&#160;the<br/>student’s&#160;solution.</p>
+<p style="position:absolute;top:557px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:553px;left:199px;white-space:nowrap" class="ft07">Compare&#160;your&#160;solution&#160;to&#160;the&#160;student's&#160;solution&#160;and&#160;evaluate&#160;if&#160;the&#160;<br/>student's&#160;solution&#160;is&#160;correct&#160;or&#160;not.</p>
+<p style="position:absolute;top:629px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:625px;left:199px;white-space:nowrap" class="ft01">Problem&#160;statement:&#160;&#34;&#34;&#34;&lt;insert&#160;problem&#160;statement&gt;&#34;&#34;&#34;</p>
+<p style="position:absolute;top:679px;left:199px;white-space:nowrap" class="ft01">Your&#160;solution:&#160;&#34;&#34;&#34;&lt;insert&#160;model&#160;generated&#160;solution&gt;&#34;&#34;&#34;</p>
+<p style="position:absolute;top:733px;left:199px;white-space:nowrap" class="ft01">Student’s&#160;solution:&#160;&#34;&#34;&#34;&lt;insert&#160;student's&#160;solution&gt;&#34;&#34;&#34;</p>
+<p style="position:absolute;top:789px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-query-sequence-2">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:848px;left:69px;white-space:nowrap" class="ft07">Finally,&#160;we&#160;can&#160;let&#160;the&#160;model&#160;use&#160;its&#160;own&#160;analysis&#160;to&#160;construct&#160;a&#160;reply&#160;in&#160;the&#160;persona&#160;of&#160;a<br/>helpful&#160;tutor.</p>
+<p style="position:absolute;top:953px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:949px;left:199px;white-space:nowrap" class="ft07">You&#160;are&#160;a&#160;math&#160;tutor.&#160;If&#160;the&#160;student&#160;made&#160;an&#160;error,&#160;offer&#160;a&#160;hint&#160;to&#160;the&#160;<br/>student&#160;in&#160;a&#160;way&#160;that&#160;does&#160;not&#160;reveal&#160;the&#160;answer.&#160;If&#160;the&#160;student&#160;did&#160;not&#160;<br/>make&#160;an&#160;error,&#160;simply&#160;offer&#160;them&#160;an&#160;encouraging&#160;comment.</p>
+<p style="position:absolute;top:1052px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:1048px;left:199px;white-space:nowrap" class="ft01">Problem&#160;statement:&#160;&#34;&#34;&#34;&lt;insert&#160;problem&#160;statement&gt;&#34;&#34;&#34;</p>
+<p style="position:absolute;top:1102px;left:199px;white-space:nowrap" class="ft01">Your&#160;solution:&#160;&#34;&#34;&#34;&lt;insert&#160;model&#160;generated&#160;solution&gt;&#34;&#34;&#34;</p>
+<p style="position:absolute;top:1156px;left:199px;white-space:nowrap" class="ft01">Student’s&#160;solution:&#160;&#34;&#34;&#34;&lt;insert&#160;student's&#160;solution&gt;&#34;&#34;&#34;</p>
+</div>
+<!-- Page 14 -->
+<a name="14"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page14-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice014.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:825px;white-space:nowrap" class="ft00">14/20</p>
+<p style="position:absolute;top:71px;left:199px;white-space:nowrap" class="ft01">Analysis:&#160;&#34;&#34;&#34;&lt;insert&#160;model&#160;generated&#160;analysis&#160;from&#160;previous&#160;step&gt;&#34;&#34;&#34;</p>
+<p style="position:absolute;top:127px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-query-sequence-3">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:238px;left:69px;white-space:nowrap" class="ft07">Suppose&#160;that&#160;we&#160;are&#160;using&#160;a&#160;model&#160;to&#160;list&#160;excerpts&#160;from&#160;a&#160;source&#160;which&#160;are&#160;relevant&#160;to&#160;a<br/>particular&#160;question.&#160;After&#160;listing&#160;each&#160;excerpt&#160;the&#160;model&#160;needs&#160;to&#160;determine&#160;if&#160;it&#160;should<br/>start&#160;writing&#160;another&#160;or&#160;if&#160;it&#160;should&#160;stop.&#160;If&#160;the&#160;source&#160;document&#160;is&#160;large,&#160;it&#160;is&#160;common&#160;for&#160;a<br/>model&#160;to&#160;stop&#160;too&#160;early&#160;and&#160;fail&#160;to&#160;list&#160;all&#160;relevant&#160;excerpts.&#160;In&#160;that&#160;case,&#160;better<br/>performance&#160;can&#160;often&#160;be&#160;obtained&#160;by&#160;prompting&#160;the&#160;model&#160;with&#160;followup&#160;queries&#160;to&#160;ﬁnd<br/>any&#160;excerpts&#160;it&#160;missed&#160;on&#160;previous&#160;passes.</p>
+<p style="position:absolute;top:452px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:448px;left:199px;white-space:nowrap" class="ft07">You&#160;will&#160;be&#160;provided&#160;with&#160;a&#160;document&#160;delimited&#160;by&#160;triple&#160;quotes.&#160;Your&#160;task&#160;<br/>is&#160;to&#160;select&#160;excerpts&#160;which&#160;pertain&#160;to&#160;the&#160;following&#160;question:&#160;&#34;What&#160;<br/>signiﬁcant&#160;paradigm&#160;shifts&#160;have&#160;occurred&#160;in&#160;the&#160;history&#160;of&#160;artiﬁcial&#160;<br/>intelligence.&#34;</p>
+<p style="position:absolute;top:583px;left:199px;white-space:nowrap" class="ft07">Ensure&#160;that&#160;excerpts&#160;contain&#160;all&#160;relevant&#160;context&#160;needed&#160;to&#160;interpret&#160;<br/>them&#160;-&#160;in&#160;other&#160;words&#160;don't&#160;extract&#160;small&#160;snippets&#160;that&#160;are&#160;missing&#160;<br/>important&#160;context.&#160;Provide&#160;output&#160;in&#160;JSON&#160;format&#160;as&#160;follows:</p>
+<p style="position:absolute;top:691px;left:199px;white-space:nowrap" class="ft07">[{&#34;excerpt&#34;:&#160;&#34;...&#34;},<br/>...<br/>{&#34;excerpt&#34;:&#160;&#34;...&#34;}]</p>
+<p style="position:absolute;top:794px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:790px;left:199px;white-space:nowrap" class="ft01">&#34;&#34;&#34;&lt;insert&#160;document&#160;here&gt;&#34;&#34;&#34;</p>
+<p style="position:absolute;top:839px;left:87px;white-space:nowrap" class="ft011">ASSISTANT</p>
+<p style="position:absolute;top:835px;left:199px;white-space:nowrap" class="ft07">[{&#34;excerpt&#34;:&#160;&#34;the&#160;model&#160;writes&#160;an&#160;excerpt&#160;here&#34;},<br/>...<br/>{&#34;excerpt&#34;:&#160;&#34;the&#160;model&#160;writes&#160;another&#160;excerpt&#160;here&#34;}]</p>
+<p style="position:absolute;top:938px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:934px;left:199px;white-space:nowrap" class="ft07">Are&#160;there&#160;more&#160;relevant&#160;excerpts?&#160;Take&#160;care&#160;not&#160;to&#160;repeat&#160;excerpts.&#160;Also&#160;<br/>ensure&#160;that&#160;excerpts&#160;contain&#160;all&#160;relevant&#160;context&#160;needed&#160;to&#160;interpret&#160;<br/>them&#160;-&#160;in&#160;other&#160;words&#160;don't&#160;extract&#160;small&#160;snippets&#160;that&#160;are&#160;missing&#160;<br/>important&#160;context.</p>
+<p style="position:absolute;top:1071px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-2nd-pass">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:191px;left:69px;white-space:nowrap" class="ft010"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-ask-the-model-if-it-missed-anything-on-previous-passes">Tactic:&#160;Ask&#160;the&#160;model&#160;if&#160;it&#160;missed&#160;anything&#160;on&#160;previous&#160;passes</a></p>
+<p style="position:absolute;top:1137px;left:69px;white-space:nowrap" class="ft06"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/strategy-use-external-tools">Strategy:&#160;Use&#160;external&#160;tools</a></p>
+</div>
+<!-- Page 15 -->
+<a name="15"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page15-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice015.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:825px;white-space:nowrap" class="ft00">15/20</p>
+<p style="position:absolute;top:117px;left:69px;white-space:nowrap" class="ft07">A&#160;model&#160;can&#160;leverage&#160;external&#160;sources&#160;of&#160;information&#160;if&#160;provided&#160;as&#160;part&#160;of&#160;its&#160;input.&#160;This<br/>can&#160;help&#160;the&#160;model&#160;to&#160;generate&#160;more&#160;informed&#160;and&#160;up-to-date&#160;responses.&#160;For&#160;example,&#160;if&#160;a<br/>user&#160;asks&#160;a&#160;question&#160;about&#160;a&#160;speciﬁc&#160;movie,&#160;it&#160;may&#160;be&#160;useful&#160;to&#160;add&#160;high&#160;quality<br/>information&#160;about&#160;the&#160;movie&#160;(e.g.&#160;actors,&#160;director,&#160;etc…)&#160;to&#160;the&#160;model’s&#160;input.&#160;Embeddings<br/>can&#160;be&#160;used&#160;to&#160;implement&#160;efﬁcient&#160;knowledge&#160;retrieval,&#160;so&#160;that&#160;relevant&#160;information&#160;can&#160;be<br/>added&#160;to&#160;the&#160;model&#160;input&#160;dynamically&#160;at&#160;run-time.</p>
+<p style="position:absolute;top:296px;left:69px;white-space:nowrap" class="ft07">A&#160;text&#160;embedding&#160;is&#160;a&#160;vector&#160;that&#160;can&#160;measure&#160;the&#160;relatedness&#160;between&#160;text&#160;strings.<br/>Similar&#160;or&#160;relevant&#160;strings&#160;will&#160;be&#160;closer&#160;together&#160;than&#160;unrelated&#160;strings.&#160;This&#160;fact,&#160;along<br/>with&#160;the&#160;existence&#160;of&#160;fast&#160;vector&#160;search&#160;algorithms&#160;means&#160;that&#160;embeddings&#160;can&#160;be&#160;used&#160;to<br/>implement&#160;efﬁcient&#160;knowledge&#160;retrieval.&#160;In&#160;particular,&#160;a&#160;text&#160;corpus&#160;can&#160;be&#160;split&#160;up&#160;into<br/>chunks,&#160;and&#160;each&#160;chunk&#160;can&#160;be&#160;embedded&#160;and&#160;stored.&#160;Then&#160;a&#160;given&#160;query&#160;can&#160;be<br/>embedded&#160;and&#160;vector&#160;search&#160;can&#160;be&#160;performed&#160;to&#160;ﬁnd&#160;the&#160;embedded&#160;chunks&#160;of&#160;text&#160;from<br/>the&#160;corpus&#160;that&#160;are&#160;most&#160;related&#160;to&#160;the&#160;query&#160;(i.e.&#160;closest&#160;together&#160;in&#160;the&#160;embedding<br/>space).</p>
+<p style="position:absolute;top:529px;left:69px;white-space:nowrap" class="ft01"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-instruct-the-model-to-use-retrieved-knowledge-to-answer-queries">Example&#160;implementations&#160;can&#160;be&#160;found&#160;in&#160;the&#160;</a></p>
+<p style="position:absolute;top:529px;left:455px;white-space:nowrap" class="ft03"><a href="https://github.com/openai/openai-cookbook/blob/main/examples/vector_databases/Using_vector_databases_for_embeddings_search.ipynb">OpenAI&#160;Cookbook</a></p>
+<p style="position:absolute;top:529px;left:609px;white-space:nowrap" class="ft01"><a href="https://github.com/openai/openai-cookbook/blob/main/examples/vector_databases/Using_vector_databases_for_embeddings_search.ipynb">.</a><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-instruct-the-model-to-use-retrieved-knowledge-to-answer-queries">&#160;See&#160;the&#160;tactic&#160;</a></p>
+<p style="position:absolute;top:529px;left:737px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-instruct-the-model-to-use-retrieved-knowledge-to-answer-queries">“Instruct</a></p>
+<p style="position:absolute;top:556px;left:69px;white-space:nowrap" class="ft03"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-instruct-the-model-to-use-retrieved-knowledge-to-answer-queries">the&#160;model&#160;to&#160;use&#160;retrieved&#160;knowledge&#160;to&#160;answer&#160;queries”</a></p>
+<p style="position:absolute;top:556px;left:538px;white-space:nowrap" class="ft01"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-instruct-the-model-to-use-retrieved-knowledge-to-answer-queries">&#160;for&#160;an&#160;example&#160;of&#160;how&#160;to&#160;use</a></p>
+<p style="position:absolute;top:583px;left:69px;white-space:nowrap" class="ft01">knowledge&#160;retrieval&#160;to&#160;minimize&#160;the&#160;likelihood&#160;that&#160;a&#160;model&#160;will&#160;make&#160;up&#160;incorrect&#160;facts.</p>
+<p style="position:absolute;top:717px;left:69px;white-space:nowrap" class="ft07">GPTs&#160;cannot&#160;be&#160;relied&#160;upon&#160;to&#160;perform&#160;arithmetic&#160;or&#160;long&#160;calculations&#160;accurately&#160;on&#160;their<br/>own.&#160;In&#160;cases&#160;where&#160;this&#160;is&#160;needed,&#160;a&#160;model&#160;can&#160;be&#160;instructed&#160;to&#160;write&#160;and&#160;run&#160;code<br/>instead&#160;of&#160;making&#160;its&#160;own&#160;calculations.&#160;In&#160;particular,&#160;a&#160;model&#160;can&#160;be&#160;instructed&#160;to&#160;put&#160;code<br/>that&#160;is&#160;meant&#160;to&#160;be&#160;run&#160;into&#160;a&#160;designated&#160;format&#160;such&#160;as&#160;triple&#160;backtics.&#160;After&#160;an&#160;output&#160;is<br/>produced,&#160;the&#160;code&#160;can&#160;be&#160;extracted&#160;and&#160;run.&#160;Finally,&#160;if&#160;necessary,&#160;the&#160;output&#160;from&#160;the<br/>code&#160;execution&#160;engine&#160;(i.e.&#160;Python&#160;interpreter)&#160;can&#160;be&#160;provided&#160;as&#160;an&#160;input&#160;to&#160;the&#160;model&#160;for<br/>the&#160;next&#160;query.</p>
+<p style="position:absolute;top:957px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:953px;left:199px;white-space:nowrap" class="ft07">You&#160;can&#160;write&#160;and&#160;execute&#160;Python&#160;code&#160;by&#160;enclosing&#160;it&#160;in&#160;triple&#160;backticks,&#160;<br/>e.g.&#160;```code&#160;goes&#160;here```.&#160;Use&#160;this&#160;to&#160;perform&#160;calculations.</p>
+<p style="position:absolute;top:1029px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:1025px;left:199px;white-space:nowrap" class="ft07">Find&#160;all&#160;real-valued&#160;roots&#160;of&#160;the&#160;following&#160;polynomial:&#160;3*x**5&#160;-&#160;5*x**4&#160;-&#160;<br/>3*x**3&#160;-&#160;7*x&#160;-&#160;10.</p>
+<p style="position:absolute;top:1108px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-code-execution">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:1167px;left:69px;white-space:nowrap" class="ft07">Another&#160;good&#160;use&#160;case&#160;for&#160;code&#160;execution&#160;is&#160;calling&#160;external&#160;APIs.&#160;If&#160;a&#160;model&#160;is&#160;instructed<br/>in&#160;the&#160;proper&#160;use&#160;of&#160;an&#160;API,&#160;it&#160;can&#160;write&#160;code&#160;that&#160;makes&#160;use&#160;of&#160;it.&#160;A&#160;model&#160;can&#160;be</p>
+<p style="position:absolute;top:43px;left:69px;white-space:nowrap" class="ft013"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-embeddings-based-search-to-implement-efficient-knowledge-retrieval">Tactic:&#160;Use&#160;embeddings-based&#160;search&#160;to&#160;implement&#160;efﬁcient&#160;knowledge<br/>retrieval</a></p>
+<p style="position:absolute;top:643px;left:69px;white-space:nowrap" class="ft013"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-use-code-execution-to-perform-more-accurate-calculations-or-call-external-apis">Tactic:&#160;Use&#160;code&#160;execution&#160;to&#160;perform&#160;more&#160;accurate&#160;calculations&#160;or&#160;call<br/>external&#160;APIs</a></p>
+</div>
+<!-- Page 16 -->
+<a name="16"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft014{font-size:18px;line-height:26px;font-family:DAAAAA+font000000002a3354b8;color:#343740;}
+-->
+</style>
+<div id="page16-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice016.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:825px;white-space:nowrap" class="ft00">16/20</p>
+<p style="position:absolute;top:44px;left:69px;white-space:nowrap" class="ft07">instructed&#160;in&#160;how&#160;to&#160;use&#160;an&#160;API&#160;by&#160;providing&#160;it&#160;with&#160;documentation&#160;and/or&#160;code&#160;samples<br/><a href="https://platform.openai.com/overview">sho</a>wing&#160;how&#160;to&#160;use&#160;the&#160;API.</p>
+<p style="position:absolute;top:149px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:145px;left:199px;white-space:nowrap" class="ft07">You&#160;can&#160;write&#160;and&#160;execute&#160;Python&#160;code&#160;by&#160;enclosing&#160;it&#160;in&#160;triple&#160;backticks.&#160;<br/>Also&#160;note&#160;that&#160;you&#160;have&#160;access&#160;to&#160;the&#160;following&#160;module&#160;to&#160;help&#160;users&#160;<br/>send&#160;messages&#160;to&#160;their&#160;friends:</p>
+<p style="position:absolute;top:253px;left:199px;white-space:nowrap" class="ft07">```python<br/>import&#160;message<br/>message.write(to=&#34;John&#34;,&#160;message=&#34;Hey,&#160;want&#160;to&#160;meetup&#160;after&#160;<br/>work?&#34;)```</p>
+<p style="position:absolute;top:390px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-code-api">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:449px;left:69px;white-space:nowrap" class="ft014">WARNING:&#160;Executing&#160;code&#160;produced&#160;by&#160;a&#160;model&#160;is&#160;not&#160;inherently&#160;safe&#160;and&#160;precautions<br/>should&#160;be&#160;taken&#160;in&#160;any&#160;application&#160;that&#160;seeks&#160;to&#160;do&#160;this.&#160;In&#160;particular,&#160;a&#160;sandboxed&#160;code<br/>execution&#160;environment&#160;is&#160;needed&#160;to&#160;limit&#160;the&#160;harm&#160;that&#160;untrusted&#160;code&#160;could&#160;cause.</p>
+<p style="position:absolute;top:613px;left:69px;white-space:nowrap" class="ft07">Sometimes&#160;it&#160;can&#160;be&#160;hard&#160;to&#160;tell&#160;whether&#160;a&#160;change&#160;—&#160;e.g.,&#160;a&#160;new&#160;instruction&#160;or&#160;a&#160;new&#160;design<br/>—&#160;makes&#160;your&#160;system&#160;better&#160;or&#160;worse.&#160;Looking&#160;at&#160;a&#160;few&#160;examples&#160;may&#160;hint&#160;at&#160;which&#160;is<br/>better,&#160;but&#160;with&#160;small&#160;sample&#160;sizes&#160;it&#160;can&#160;be&#160;hard&#160;to&#160;distinguish&#160;between&#160;a&#160;true<br/>improvement&#160;or&#160;random&#160;luck.&#160;Maybe&#160;the&#160;change&#160;helps&#160;performance&#160;on&#160;some&#160;inputs,&#160;but<br/>hurts&#160;performance&#160;on&#160;others.</p>
+<p style="position:absolute;top:765px;left:69px;white-space:nowrap" class="ft01">Evaluation&#160;procedures&#160;(or&#160;&#34;evals&#34;)&#160;are&#160;useful&#160;for&#160;optimizing&#160;system&#160;designs.&#160;Good&#160;evals&#160;are:</p>
+<p style="position:absolute;top:924px;left:69px;white-space:nowrap" class="ft011">DIFFERENCE&#160;TO&#160;DETECT</p>
+<p style="position:absolute;top:924px;left:275px;white-space:nowrap" class="ft011">SAMPLE&#160;SIZE&#160;NEEDED&#160;FOR&#160;95%&#160;CONFIDENCE</p>
+<p style="position:absolute;top:957px;left:69px;white-space:nowrap" class="ft01">30%</p>
+<p style="position:absolute;top:957px;left:275px;white-space:nowrap" class="ft01">~10</p>
+<p style="position:absolute;top:1003px;left:69px;white-space:nowrap" class="ft01">10%</p>
+<p style="position:absolute;top:1003px;left:275px;white-space:nowrap" class="ft01">~100</p>
+<p style="position:absolute;top:1050px;left:69px;white-space:nowrap" class="ft01">3%</p>
+<p style="position:absolute;top:1050px;left:275px;white-space:nowrap" class="ft01">~1,000</p>
+<p style="position:absolute;top:1096px;left:69px;white-space:nowrap" class="ft01">1%</p>
+<p style="position:absolute;top:1096px;left:275px;white-space:nowrap" class="ft01">~10,000</p>
+<p style="position:absolute;top:1149px;left:69px;white-space:nowrap" class="ft07">Evaluation&#160;of&#160;outputs&#160;can&#160;be&#160;done&#160;by&#160;computers,&#160;humans,&#160;or&#160;a&#160;mix.&#160;Computers&#160;can<br/>automate&#160;evals&#160;with&#160;objective&#160;criteria&#160;(e.g.,&#160;questions&#160;with&#160;single&#160;correct&#160;answers)&#160;as&#160;well</p>
+<p style="position:absolute;top:564px;left:69px;white-space:nowrap" class="ft06"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/strategy-test-changes-systematically">Strategy:&#160;Test&#160;changes&#160;systematically</a></p>
+<p style="position:absolute;top:809px;left:105px;white-space:nowrap" class="ft01">Representative&#160;of&#160;real-world&#160;usage&#160;(or&#160;at&#160;least&#160;diverse)</p>
+<p style="position:absolute;top:843px;left:105px;white-space:nowrap" class="ft01">Contain&#160;many&#160;test&#160;cases&#160;for&#160;greater&#160;statistical&#160;power&#160;(see&#160;table&#160;below&#160;for&#160;guidelines)</p>
+<p style="position:absolute;top:877px;left:105px;white-space:nowrap" class="ft01">Easy&#160;to&#160;automate&#160;or&#160;repeat</p>
+</div>
+<!-- Page 17 -->
+<a name="17"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page17-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice017.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:825px;white-space:nowrap" class="ft00">17/20</p>
+<p style="position:absolute;top:44px;left:69px;white-space:nowrap" class="ft07">as&#160;some&#160;subjective&#160;or&#160;fuzzy&#160;criteria,&#160;in&#160;which&#160;model&#160;outputs&#160;are&#160;evaluated&#160;by&#160;other&#160;model<br/><a href="https://platform.openai.com/overview">que</a>ries.<a href="https://github.com/openai/evals">&#160;</a></p>
+<p style="position:absolute;top:71px;left:139px;white-space:nowrap" class="ft03"><a href="https://github.com/openai/evals">OpenAI&#160;Evals</a></p>
+<p style="position:absolute;top:71px;left:254px;white-space:nowrap" class="ft01"><a href="https://github.com/openai/evals">&#160;</a>is&#160;an&#160;open-source&#160;software&#160;framework&#160;that&#160;provides&#160;tools&#160;for</p>
+<p style="position:absolute;top:98px;left:69px;white-space:nowrap" class="ft01">creating&#160;automated&#160;evals.</p>
+<p style="position:absolute;top:142px;left:69px;white-space:nowrap" class="ft07">Model-based&#160;evals&#160;can&#160;be&#160;useful&#160;when&#160;there&#160;exists&#160;a&#160;range&#160;of&#160;possible&#160;outputs&#160;that&#160;would<br/>be&#160;considered&#160;equally&#160;high&#160;in&#160;quality&#160;(e.g.&#160;for&#160;questions&#160;with&#160;long&#160;answers).&#160;The&#160;boundary<br/>between&#160;what&#160;can&#160;be&#160;realistically&#160;evaluated&#160;with&#160;a&#160;model-based&#160;eval&#160;and&#160;what&#160;requires&#160;a<br/>human&#160;to&#160;evaluate&#160;is&#160;fuzzy&#160;and&#160;is&#160;constantly&#160;shifting&#160;as&#160;models&#160;become&#160;more&#160;capable.&#160;We<br/>encourage&#160;experimentation&#160;to&#160;ﬁgure&#160;out&#160;how&#160;well&#160;model-based&#160;evals&#160;can&#160;work&#160;for&#160;your&#160;use<br/>case.</p>
+<p style="position:absolute;top:384px;left:69px;white-space:nowrap" class="ft07">Suppose&#160;it&#160;is&#160;known&#160;that&#160;the&#160;correct&#160;answer&#160;to&#160;a&#160;question&#160;should&#160;make&#160;reference&#160;to&#160;a<br/>speciﬁc&#160;set&#160;of&#160;known&#160;facts.&#160;Then&#160;we&#160;can&#160;use&#160;a&#160;model&#160;query&#160;to&#160;count&#160;how&#160;many&#160;of&#160;the<br/>required&#160;facts&#160;are&#160;included&#160;in&#160;the&#160;answer.</p>
+<p style="position:absolute;top:481px;left:69px;white-space:nowrap" class="ft01">For&#160;example,&#160;using&#160;the&#160;following&#160;system&#160;message:</p>
+<p style="position:absolute;top:560px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:556px;left:199px;white-space:nowrap" class="ft07">You&#160;will&#160;be&#160;provided&#160;with&#160;text&#160;delimited&#160;by&#160;triple&#160;quotes&#160;that&#160;is&#160;supposed&#160;<br/>to&#160;be&#160;the&#160;answer&#160;to&#160;a&#160;question.&#160;Check&#160;if&#160;the&#160;following&#160;pieces&#160;of&#160;<br/>information&#160;are&#160;directly&#160;contained&#160;in&#160;the&#160;answer:</p>
+<p style="position:absolute;top:664px;left:199px;white-space:nowrap" class="ft07">-&#160;Neil&#160;Armstrong&#160;was&#160;the&#160;ﬁrst&#160;person&#160;to&#160;walk&#160;on&#160;the&#160;moon.<br/>-&#160;The&#160;date&#160;Neil&#160;Armstrong&#160;ﬁrst&#160;walked&#160;on&#160;the&#160;moon&#160;was&#160;July&#160;21,&#160;1969.</p>
+<p style="position:absolute;top:745px;left:199px;white-space:nowrap" class="ft01">For&#160;each&#160;of&#160;these&#160;points&#160;perform&#160;the&#160;following&#160;steps:</p>
+<p style="position:absolute;top:799px;left:199px;white-space:nowrap" class="ft07">1&#160;-&#160;Restate&#160;the&#160;point.<br/>2&#160;-&#160;Provide&#160;a&#160;citation&#160;from&#160;the&#160;answer&#160;which&#160;is&#160;closest&#160;to&#160;this&#160;point.<br/>3&#160;-&#160;Consider&#160;if&#160;someone&#160;reading&#160;the&#160;citation&#160;who&#160;doesn't&#160;know&#160;the&#160;topic&#160;<br/>could&#160;directly&#160;infer&#160;the&#160;point.&#160;Explain&#160;why&#160;or&#160;why&#160;not&#160;before&#160;making&#160;up&#160;<br/>your&#160;mind.<br/>4&#160;-&#160;Write&#160;&#34;yes&#34;&#160;if&#160;the&#160;answer&#160;to&#160;3&#160;was&#160;yes,&#160;otherwise&#160;write&#160;&#34;no&#34;.</p>
+<p style="position:absolute;top:988px;left:199px;white-space:nowrap" class="ft07">Finally,&#160;provide&#160;a&#160;count&#160;of&#160;how&#160;many&#160;&#34;yes&#34;&#160;answers&#160;there&#160;are.&#160;Provide&#160;this&#160;<br/>count&#160;as&#160;{&#34;count&#34;:&#160;&lt;insert&#160;count&#160;here&gt;}.</p>
+<p style="position:absolute;top:1089px;left:69px;white-space:nowrap" class="ft01">Here's&#160;an&#160;example&#160;input&#160;where&#160;both&#160;points&#160;are&#160;satisﬁed:</p>
+<p style="position:absolute;top:1167px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:1163px;left:199px;white-space:nowrap" class="ft01">&lt;insert&#160;system&#160;message&#160;above&gt;</p>
+<p style="position:absolute;top:337px;left:69px;white-space:nowrap" class="ft010"><a href="https://platform.openai.com/docs/guides/gpt-best-practices/tactic-evaluate-model-outputs-with-reference-to-gold-standard-answers">Tactic:&#160;Evaluate&#160;model&#160;outputs&#160;with&#160;reference&#160;to&#160;gold-standard&#160;answers</a></p>
+</div>
+<!-- Page 18 -->
+<a name="18"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page18-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice018.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:825px;white-space:nowrap" class="ft00">18/20</p>
+<p style="position:absolute;top:48px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:44px;left:199px;white-space:nowrap" class="ft07">&#34;&#34;&#34;Neil&#160;Armstrong&#160;is&#160;famous&#160;for&#160;being&#160;the&#160;ﬁrst&#160;human&#160;to&#160;set&#160;foot&#160;on&#160;the&#160;<br/>Moon.&#160;This&#160;historic&#160;event&#160;took&#160;place&#160;on&#160;July&#160;21,&#160;1969,&#160;during&#160;the&#160;Apollo&#160;11&#160;<br/>mission.&#34;&#34;&#34;</p>
+<p style="position:absolute;top:154px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-model-based-eval-1">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:213px;left:69px;white-space:nowrap" class="ft01">Here's&#160;an&#160;example&#160;input&#160;where&#160;only&#160;one&#160;point&#160;is&#160;satisﬁed:</p>
+<p style="position:absolute;top:291px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:287px;left:199px;white-space:nowrap" class="ft01">&lt;insert&#160;system&#160;message&#160;above&gt;</p>
+<p style="position:absolute;top:336px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:332px;left:199px;white-space:nowrap" class="ft07">&#34;&#34;&#34;Neil&#160;Armstrong&#160;made&#160;history&#160;when&#160;he&#160;stepped&#160;off&#160;the&#160;lunar&#160;module,&#160;<br/>becoming&#160;the&#160;ﬁrst&#160;person&#160;to&#160;walk&#160;on&#160;the&#160;moon.&#34;&#34;&#34;</p>
+<p style="position:absolute;top:415px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-model-based-eval-2">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:474px;left:69px;white-space:nowrap" class="ft01">Here's&#160;an&#160;example&#160;input&#160;where&#160;none&#160;are&#160;satisﬁed:</p>
+<p style="position:absolute;top:552px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:548px;left:199px;white-space:nowrap" class="ft01">&lt;insert&#160;system&#160;message&#160;above&gt;</p>
+<p style="position:absolute;top:597px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:593px;left:199px;white-space:nowrap" class="ft07">&#34;&#34;&#34;In&#160;the&#160;summer&#160;of&#160;'69,&#160;a&#160;voyage&#160;grand,<br/>Apollo&#160;11,&#160;bold&#160;as&#160;legend's&#160;hand.<br/>Armstrong&#160;took&#160;a&#160;step,&#160;history&#160;unfurled,<br/>&#34;One&#160;small&#160;step,&#34;&#160;he&#160;said,&#160;for&#160;a&#160;new&#160;world.&#34;&#34;&#34;</p>
+<p style="position:absolute;top:730px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-model-based-eval-3">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:789px;left:69px;white-space:nowrap" class="ft07">There&#160;are&#160;many&#160;possible&#160;variants&#160;on&#160;this&#160;type&#160;of&#160;model-based&#160;eval.&#160;Consider&#160;the&#160;following<br/>variation&#160;which&#160;tracks&#160;the&#160;kind&#160;of&#160;overlap&#160;between&#160;the&#160;candidate&#160;answer&#160;and&#160;the&#160;gold-<br/>standard&#160;answer,&#160;and&#160;also&#160;tracks&#160;whether&#160;the&#160;candidate&#160;answer&#160;contradicts&#160;any&#160;part&#160;of&#160;the<br/>gold-standard&#160;answer.</p>
+<p style="position:absolute;top:948px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:944px;left:199px;white-space:nowrap" class="ft07">Use&#160;the&#160;following&#160;steps&#160;to&#160;respond&#160;to&#160;user&#160;inputs.&#160;Fully&#160;restate&#160;each&#160;step&#160;<br/>before&#160;proceeding.&#160;i.e.&#160;&#34;Step&#160;1:&#160;Reason...&#34;.</p>
+<p style="position:absolute;top:1025px;left:199px;white-space:nowrap" class="ft07">Step&#160;1:&#160;Reason&#160;step-by-step&#160;about&#160;whether&#160;the&#160;information&#160;in&#160;the&#160;<br/>submitted&#160;answer&#160;compared&#160;to&#160;the&#160;expert&#160;answer&#160;is&#160;either:&#160;disjoint,&#160;<br/>equal,&#160;a&#160;subset,&#160;a&#160;superset,&#160;or&#160;overlapping&#160;(i.e.&#160;some&#160;intersection&#160;but&#160;not&#160;<br/>subset/superset).</p>
+<p style="position:absolute;top:1160px;left:199px;white-space:nowrap" class="ft07">Step&#160;2:&#160;Reason&#160;step-by-step&#160;about&#160;whether&#160;the&#160;submitted&#160;answer&#160;<br/>contradicts&#160;any&#160;aspect&#160;of&#160;the&#160;expert&#160;answer.</p>
+</div>
+<!-- Page 19 -->
+<a name="19"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page19-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice019.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:825px;white-space:nowrap" class="ft00">19/20</p>
+<p style="position:absolute;top:71px;left:199px;white-space:nowrap" class="ft07">Step&#160;3:&#160;Output&#160;a&#160;JSON&#160;object&#160;structured&#160;like:&#160;{&#34;type_of_overlap&#34;:&#160;<br/>&#34;disjoint&#34;&#160;or&#160;&#34;equal&#34;&#160;or&#160;&#34;subset&#34;&#160;or&#160;&#34;superset&#34;&#160;or&#160;&#34;overlapping&#34;,&#160;<br/>&#34;contradiction&#34;:&#160;true&#160;or&#160;false}</p>
+<p style="position:absolute;top:199px;left:69px;white-space:nowrap" class="ft07">Here's&#160;an&#160;example&#160;input&#160;with&#160;a&#160;substandard&#160;answer&#160;which&#160;nonetheless&#160;does&#160;not&#160;contradict<br/>the&#160;expert&#160;answer:</p>
+<p style="position:absolute;top:304px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:300px;left:199px;white-space:nowrap" class="ft01">&lt;insert&#160;system&#160;message&#160;above&gt;</p>
+<p style="position:absolute;top:349px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:345px;left:199px;white-space:nowrap" class="ft07">Question:&#160;&#34;&#34;&#34;What&#160;event&#160;is&#160;Neil&#160;Armstrong&#160;most&#160;famous&#160;for&#160;and&#160;on&#160;what&#160;<br/>date&#160;did&#160;it&#160;occur?&#160;Assume&#160;UTC&#160;time.&#34;&#34;&#34;</p>
+<p style="position:absolute;top:426px;left:199px;white-space:nowrap" class="ft01">Submitted&#160;Answer:&#160;&#34;&#34;&#34;Didn't&#160;he&#160;walk&#160;on&#160;the&#160;moon&#160;or&#160;something?&#34;&#34;&#34;</p>
+<p style="position:absolute;top:480px;left:199px;white-space:nowrap" class="ft07">Expert&#160;Answer:&#160;&#34;&#34;&#34;Neil&#160;Armstrong&#160;is&#160;most&#160;famous&#160;for&#160;being&#160;the&#160;ﬁrst&#160;<br/>person&#160;to&#160;walk&#160;on&#160;the&#160;moon.&#160;This&#160;historic&#160;event&#160;occurred&#160;on&#160;July&#160;21,&#160;<br/>1969.&#34;&#34;&#34;</p>
+<p style="position:absolute;top:590px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-model-based-eval-4">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:649px;left:69px;white-space:nowrap" class="ft01">Here's&#160;an&#160;example&#160;input&#160;with&#160;answer&#160;that&#160;directly&#160;contradicts&#160;the&#160;expert&#160;answer:</p>
+<p style="position:absolute;top:727px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:723px;left:199px;white-space:nowrap" class="ft01">&lt;insert&#160;system&#160;message&#160;above&gt;</p>
+<p style="position:absolute;top:772px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:768px;left:199px;white-space:nowrap" class="ft07">Question:&#160;&#34;&#34;&#34;What&#160;event&#160;is&#160;Neil&#160;Armstrong&#160;most&#160;famous&#160;for&#160;and&#160;on&#160;what&#160;<br/>date&#160;did&#160;it&#160;occur?&#160;Assume&#160;UTC&#160;time.&#34;&#34;&#34;</p>
+<p style="position:absolute;top:849px;left:199px;white-space:nowrap" class="ft07">Submitted&#160;Answer:&#160;&#34;&#34;&#34;On&#160;the&#160;21st&#160;of&#160;July&#160;1969,&#160;Neil&#160;Armstrong&#160;became&#160;<br/>the&#160;second&#160;person&#160;to&#160;walk&#160;on&#160;the&#160;moon,&#160;following&#160;after&#160;Buzz&#160;Aldrin.&#34;&#34;&#34;</p>
+<p style="position:absolute;top:930px;left:199px;white-space:nowrap" class="ft07">Expert&#160;Answer:&#160;&#34;&#34;&#34;Neil&#160;Armstrong&#160;is&#160;most&#160;famous&#160;for&#160;being&#160;the&#160;ﬁrst&#160;<br/>person&#160;to&#160;walk&#160;on&#160;the&#160;moon.&#160;This&#160;historic&#160;event&#160;occurred&#160;on&#160;July&#160;21,&#160;<br/>1969.&#34;&#34;&#34;</p>
+<p style="position:absolute;top:1040px;left:87px;white-space:nowrap" class="ft012"><a href="https://platform.openai.com/playground/p/default-model-based-eval-5">Open&#160;in&#160;Playground</a></p>
+<p style="position:absolute;top:1099px;left:69px;white-space:nowrap" class="ft07">Here's&#160;an&#160;example&#160;input&#160;with&#160;a&#160;correct&#160;answer&#160;that&#160;also&#160;provides&#160;a&#160;bit&#160;more&#160;detail&#160;than&#160;is<br/>necessary:</p>
+</div>
+<!-- Page 20 -->
+<a name="20"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page20-div" style="position:relative;width:892px;height:1262px;">
+<img width="892" height="1262" src="bestpractice020.png" alt="background image"/>
+<p style="position:absolute;top:24px;left:40px;white-space:nowrap" class="ft00">6/9/23, 2:38 PM</p>
+<p style="position:absolute;top:24px;left:428px;white-space:nowrap" class="ft00">GPT&#160;best practices - OpenAI&#160;API</p>
+<p style="position:absolute;top:1229px;left:40px;white-space:nowrap" class="ft00">https://platform.openai.com/docs/guides/gpt-best-practices</p>
+<p style="position:absolute;top:1229px;left:825px;white-space:nowrap" class="ft00">20/20</p>
+<p style="position:absolute;top:48px;left:87px;white-space:nowrap" class="ft011">SYSTEM</p>
+<p style="position:absolute;top:44px;left:199px;white-space:nowrap" class="ft01">&lt;insert&#160;system&#160;message&#160;above&gt;</p>
+<p style="position:absolute;top:93px;left:87px;white-space:nowrap" class="ft011">USER</p>
+<p style="position:absolute;top:89px;left:199px;white-space:nowrap" class="ft07">Question:&#160;&#34;&#34;&#34;What&#160;event&#160;is&#160;Neil&#160;Armstrong&#160;most&#160;famous&#160;for&#160;and&#160;on&#160;what&#160;<br/>date&#160;did&#160;it&#160;occur?&#160;Assume&#160;UTC&#160;time.&#34;&#34;&#34;</p>
+<p style="position:absolute;top:170px;left:199px;white-space:nowrap" class="ft07">Submitted&#160;Answer:&#160;&#34;&#34;&#34;At&#160;approximately&#160;02:56&#160;UTC&#160;on&#160;July&#160;21st&#160;1969,&#160;Neil&#160;<br/>Armstrong&#160;became&#160;the&#160;ﬁrst&#160;human&#160;to&#160;set&#160;foot&#160;on&#160;the&#160;lunar&#160;surface,&#160;<br/>marking&#160;a&#160;monumental&#160;achievement&#160;in&#160;human&#160;history.&#34;&#34;&#34;</p>
+<p style="position:absolute;top:278px;left:199px;white-space:nowrap" class="ft07">Expert&#160;Answer:&#160;&#34;&#34;&#34;Neil&#160;Armstrong&#160;is&#160;most&#160;famous&#160;for&#160;being&#160;the&#160;ﬁrst&#160;<br/>person&#160;to&#160;walk&#160;on&#160;the&#160;moon.&#160;This&#160;historic&#160;event&#160;occurred&#160;on&#160;July&#160;21,&#160;<br/>1969.&#34;&#34;&#34;</p>
+<p style="position:absolute;top:388px;left:87px;white-space:nowrap" class="ft012">O</p>
+<p style="position:absolute;top:388px;left:156px;white-space:nowrap" class="ft012">l</p>
+<p style="position:absolute;top:388px;left:220px;white-space:nowrap" class="ft012">d</p>
+</div>
+</body>
+</html>
